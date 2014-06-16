@@ -4,7 +4,7 @@
 ! Title: Linkedinsanity rules
 ! Last modified: 16 Jun 2014 23:23 UTC
 ! Expires: 30 days (update frequency)
-! Homepage: https://github.com/taylr/linkedinsanity/linkedinsanity.txt
+! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License 
 !--------------------------------------------------------------------!
 linkedin.com###wmi-katy
