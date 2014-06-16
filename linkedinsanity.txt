@@ -1,0 +1,58 @@
+[Adblock Plus 2.0]
+! Checksum: da66997279024228d73bb6eecbfd70b73f6b831e
+! Version: 201406161123
+! Title: Linkedinsanity rules
+! Last modified: 16 Jun 2014 23:23 UTC
+! Expires: 30 days (update frequency)
+! Homepage: https://github.com/taylr/linkedinsanity/linkedinsanity.txt
+! Licence: MIT License 
+!--------------------------------------------------------------------!
+linkedin.com###wmi-katy
+linkedin.com###pymk-show-more
+linkedin.com###pymk
+linkedin.com###candy
+linkedin.com###bt-pymk-showmore
+linkedin.com###pymk*
+linkedin.com###pymk-cat-filter
+linkedin.com###pymk-people-card
+linkedin.com###contacts_page_key
+linkedin.com###with-dimiss-button
+linkedin.com###sync-promo
+linkedin.com###engagement-list
+linkedin.com##.treasury-promo
+linkedin.com###discovery-module
+linkedin.com##add-connections
+linkedin.com###guided-edit-promo
+linkedin.com##.discovery-module
+linkedin.com###discovery-peek-right
+linkedin.com##.premium-nav
+linkedin.com##.wvmp-upsell
+linkedin.com###strength
+linkedin.com##.relationship-tour-callout
+linkedin.com###skyline-promo-container
+linkedin.com##.engagement-list
+linkedin.com###lego-modules
+linkedin.com##.recommended-actions
+linkedin.com###recommended-actions
+linkedin.com###pymk_*
+linkedin.com##.linkedin-sponsor
+linkedin.com##.linkedin-recommend-job
+linkedin.com##.linkedin-like
+linkedin.com##.linkedin-follow
+linkedin.com##.linkedin-anniversary
+linkedin.com###ad-slot-*
+linkedin.com###slick-sharing-cont
+linkedin.com###post-module
+linkedin.com###dialog-slideshare-wrapper
+linkedin.com###premiumicon
+linkedin.com###today-news-wrapper
+linkedin.com##.upsell
+linkedin.com###companiesForYou
+linkedin.com###groupsForYou
+linkedin.com###wvyu-carousel-viewport
+linkedin.com###right-rail-ad
+linkedin.com###jobsForYou
+linkedin.com###share-teaser-overlay
+linkedin.com###today-carousel
+linkedin.com###todal-carousel-header
+
