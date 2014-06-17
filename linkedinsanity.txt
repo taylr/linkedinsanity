@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: da66997279024228d73bb6eecbfd70b73f6b831e
+! Checksum: 97BVQbCc60NbslcJ8jwspg
 ! Version: 201406161123
 ! Title: Linkedinsanity rules
 ! Last modified: 16 Jun 2014 23:23 UTC
