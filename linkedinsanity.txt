@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 97BVQbCc60NbslcJ8jwspg
-! Version: 201406161123
+! Checksum: 6gk+GjkyGCijLxTs7vj64w
+! Version: 201503040908
 ! Title: Linkedinsanity rules
-! Last modified: 16 Jun 2014 23:23 UTC
+! Last modified: 4 Mar 2015 14:08 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License 
@@ -55,3 +55,15 @@ linkedin.com###jobsForYou
 linkedin.com###share-teaser-overlay
 linkedin.com###today-carousel
 linkedin.com###todal-carousel-header
+linkedin.com##.pymk
+linkedin.com#li(class*=people-)
+linkedin.com#li(class*=-post-)
+linkedin.com#li(class*=-comment-)
+linkedin.com#li.is-sponsored
+linkedin.com#li(class*=-join-)
+linkedin.com#li(class*=recommend)
+linkedin.com#li(class*=pulse)
+linkedin.com#li(class*=-reshare-)
+linkedin.com#li(class*=-like-)
+linkedin.com#li(class*=-share-)
+linkedin.com#li(class*=-follow-)
