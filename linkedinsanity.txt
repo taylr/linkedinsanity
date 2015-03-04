@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: 6gk+GjkyGCijLxTs7vj64w
+! Checksum: qRGDWwATBmTHOvq3BrJ+kw
 ! Version: 201503040908
 ! Title: Linkedinsanity rules
 ! Last modified: 4 Mar 2015 14:08 UTC
@@ -8,13 +8,7 @@
 ! Licence: MIT License 
 !--------------------------------------------------------------------!
 linkedin.com###wmi-katy
-linkedin.com###pymk-show-more
-linkedin.com###pymk
 linkedin.com###candy
-linkedin.com###bt-pymk-showmore
-linkedin.com###pymk*
-linkedin.com###pymk-cat-filter
-linkedin.com###pymk-people-card
 linkedin.com###contacts_page_key
 linkedin.com###with-dimiss-button
 linkedin.com###sync-promo
@@ -34,13 +28,12 @@ linkedin.com##.engagement-list
 linkedin.com###lego-modules
 linkedin.com##.recommended-actions
 linkedin.com###recommended-actions
-linkedin.com###pymk_*
 linkedin.com##.linkedin-sponsor
 linkedin.com##.linkedin-recommend-job
 linkedin.com##.linkedin-like
 linkedin.com##.linkedin-follow
 linkedin.com##.linkedin-anniversary
-linkedin.com###ad-slot-*
+linkedin.com##(id*=ad-slot-)
 linkedin.com###slick-sharing-cont
 linkedin.com###post-module
 linkedin.com###dialog-slideshare-wrapper
@@ -55,7 +48,12 @@ linkedin.com###jobsForYou
 linkedin.com###share-teaser-overlay
 linkedin.com###today-carousel
 linkedin.com###todal-carousel-header
-linkedin.com##.pymk
+linkedin.com##.connection-importer-container
+linkedin.com###share-box
+linkedin.com###freemium-bg
+linkedin.com##.linkedin-people-follow
+linkedin.com##(id*=pymk)
+linkedin.com##(class*=pymk)
 linkedin.com#li(class*=people-)
 linkedin.com#li(class*=-post-)
 linkedin.com#li(class*=-comment-)
