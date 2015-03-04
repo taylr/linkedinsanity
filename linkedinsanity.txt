@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: qRGDWwATBmTHOvq3BrJ+kw
+! Checksum: ncijEsF0mpZ0jIPUEvBdtA
 ! Version: 201503040908
 ! Title: Linkedinsanity rules
 ! Last modified: 4 Mar 2015 14:08 UTC
@@ -52,8 +52,10 @@ linkedin.com##.connection-importer-container
 linkedin.com###share-box
 linkedin.com###freemium-bg
 linkedin.com##.linkedin-people-follow
-linkedin.com##(id*=pymk)
-linkedin.com##(class*=pymk)
+linkedin.com#div(id*=pymk)
+linkedin.com#li(id*=pymk)
+linkedin.com#div(class*=pymk)
+linkedin.com#li(class*=pymk)
 linkedin.com#li(class*=people-)
 linkedin.com#li(class*=-post-)
 linkedin.com#li(class*=-comment-)
