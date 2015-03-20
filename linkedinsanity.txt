@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: ncijEsF0mpZ0jIPUEvBdtA
-! Version: 201503040908
+! Checksum: oqEj6tSj9rCwADQQTCYhqg
+! Version: 201503200720
 ! Title: Linkedinsanity rules
-! Last modified: 4 Mar 2015 14:08 UTC
+! Last modified: 20 Mar 2015 12:20 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License 
@@ -67,3 +67,7 @@ linkedin.com#li(class*=-reshare-)
 linkedin.com#li(class*=-like-)
 linkedin.com#li(class*=-share-)
 linkedin.com#li(class*=-follow-)
+linkedin.com###sharebox-container
+linkedin.com###share-actions
+linkedin.com###pymk-container
+linkedin.com###props-container
