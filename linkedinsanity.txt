@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: UZutm+JYzqBnbadd8svPAg
-! Version: 201705011323
+! Checksum: evpOiVI9OJg8DzxKjVCKZQ
+! Version: 201705011329
 ! Title: Linkedinsanity rules
-! Last modified: 01 May 2017 13:23 UTC
+! Last modified: 01 May 2017 13:29 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -11,7 +11,5 @@ www.linkedin.com##article[class*="sponsored"]
 www.linkedin.com##article[class*="pymk"]
 www.linkedin.com##article[class*="jymbii"]
 www.linkedin.com##article[class*="lynda"]
-www.linkedin.com##article[class*="pymk"]
-www.linkedin.com##article[class*="sponsored"]
 www.linkedin.com##aside#msg-overlay
 www.linkedin.com##div[class*="feed-s-follows-module"]
