@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201705151714
-! Checksum: TC25en7iFXiZAAO+9NQULg
+! Checksum: gP766XdEEIQ0RC5vgdtfNA
+! Version: 201705261850
 ! Title: Linkedinsanity rules
-! Last modified: 15 May 2017 17:14 UTC
+! Last modified: 26 May 2017 18:50 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -18,9 +18,10 @@ www.linkedin.com##aside#msg-overlay
 www.linkedin.com##div[class*="feed-s-follows-module"]
 ! click bait
 www.linkedin.com##div.search-s-news-module
+www.linkedin.com##article.feed-s-update--channel
 ! low quality tutorials
 www.linkedin.com##div[class*="-learning"]
-www.linkedin.com##section[class*="-recommendations"]
+www.linkined.com##section[class*=course-recommendations]
 ! remove people-you-may-know filler from pages
 www.linkedin.com##section[class*="pymk"]
 ! remove navbar cruft
