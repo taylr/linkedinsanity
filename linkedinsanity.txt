@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 1qLD649449g7z8Cbzi8ZXA
-! Version: 201705261905
+! Version: 201706261943
+! Checksum: /kZrA9G0nGGD5kE+H8nDNQ
 ! Title: Linkedinsanity rules
-! Last modified: 26 May 2017 19:05 UTC
+! Last modified: 26 June 2017 19:43 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -29,3 +29,8 @@ www.linkedin.com##section[class*="pymk"]
 ! remove navbar cruft
 www.linkedin.com##li#spotlight-one-nav-item
 www.linkedin.com##li#app-launcher-nav-item
+! remove upsells
+linkedin.com##section.mn-abi-form
+linkedin.com##div[class*=jobs-upsell]
+linkedin.com##a[class*=premium-upsell]
+
