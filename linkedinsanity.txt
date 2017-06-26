@@ -7,30 +7,35 @@
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
 !--------------------------------------------------------------------!
+!
+!! LinkedIn
+!
 ! make the feed a lot more useful
-www.linkedin.com##article[class*="sponsored"]
-www.linkedin.com##article[class*="pymk"]
-www.linkedin.com##article[class*="jymbii"]
-www.linkedin.com##article[class*="lynda"]
+linkedin.com##article[class*="sponsored"]
+linkedin.com##article[class*="pymk"]
+linkedin.com##article[class*="jymbii"]
+linkedin.com##article[class*="lynda"]
 ! messenger
-www.linkedin.com##aside#msg-overlay
+linkedin.com##aside#msg-overlay
 ! follows
-www.linkedin.com##div[class*="feed-s-follows-module"]
+linkedin.com##div[class*="feed-s-follows-module"]
 ! click bait
-www.linkedin.com##div.search-s-news-module
-www.linkedin.com##article.feed-s-update--channel
+linkedin.com##div.search-s-news-module
+linkedin.com##article.feed-s-update--channel
 ! low quality tutorials
-www.linkedin.com##div[class*="-learning"]
-www.linkined.com##section[class*=course-recommendations]
-www.linkedin.com##section[class*=-course-recommendations]
-pv-course-recommendations
+linkedin.com##div[class*="-learning"]
+linkined.com##section[class*=course-recommendations]
+linkedin.com##section[class*=-course-recommendations]
 ! remove people-you-may-know filler from pages
-www.linkedin.com##section[class*="pymk"]
+linkedin.com##section[class*="pymk"]
 ! remove navbar cruft
-www.linkedin.com##li#spotlight-one-nav-item
-www.linkedin.com##li#app-launcher-nav-item
+linkedin.com##li#spotlight-one-nav-item
+linkedin.com##li#app-launcher-nav-item
 ! remove upsells
 linkedin.com##section.mn-abi-form
 linkedin.com##div[class*=jobs-upsell]
 linkedin.com##a[class*=premium-upsell]
-
+!
+!! Twitter
+twitter.com##.WhoToFollow
+twitter.com##.trends.Trends.module
