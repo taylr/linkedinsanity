@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Checksum: 1OXTOHfmKM788+m4u5DN2w
+! Checksum: M5tOc5e9tRp0h0HeAt3oaQ
 ! Version: 201707071624
-! Title: Linkedinsanity rules
+! Title: Spies Dislike Us Having Privacy
 ! Last modified: 07 July 2017 16:24 UTC
 ! Expires: 30 days (update frequency)
-! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-like-us.txt
+! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
 !--------------------------------------------------------------------!
 ! amazon
