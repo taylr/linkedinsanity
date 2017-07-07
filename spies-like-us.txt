@@ -1,0 +1,74 @@
+[Adblock Plus 2.0]
+! Checksum: 1OXTOHfmKM788+m4u5DN2w
+! Version: 201707071624
+! Title: Linkedinsanity rules
+! Last modified: 07 July 2017 16:24 UTC
+! Expires: 30 days (update frequency)
+! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-like-us.txt
+! Licence: MIT License
+!--------------------------------------------------------------------!
+! amazon
+fls-na.amazon.com
+m.media-amazon.com
+unagi-na.amazon.com
+! facebook
+fbcdn-profile-a.akamaihd.net
+facebook.net
+external.xx.fbcdn.net
+! disqus
+disqus.com
+! dedicated ID trackers
+amp.ai
+origin.ih.constantcontact.com
+conductrics.com
+crwdcntrl.net
+dynamicyield.com
+js.driftt.com
+fullstory.com
+gaps.com
+gigya.com
+janrain.com
+livefyre.com
+madkudu.com
+marketo.net
+optnmstr.com
+pehub.com
+rpxnow.com
+stacksocial.com
+tapad.com
+theplatform.com  ! comcast
+truste.com
+visitor-analytics.io
+wfxtriggers.com
+! pixel/beacons
+dynbeacon.global.ssl.fastly.net
+tracking-plan.herokuapp.com
+tempo.inc.com
+xid.nightmarejs.org
+prweb.com
+! spy on page activity/usage
+crlog-crcn.adobe.com
+surf.nbcuni.com
+log.quora.com
+ravenjs.com
+error-collector.ted.com
+! spy on location
+geo.query.yahoo.com
+! media junk
+foxnewsplayer-a.akamaihd.net
+videos.zillowstatic.com
+! infests many pages without benefit
+browser-update.org
+! sketching image/media hosts
+mat1.gtimg.com
+! squatter ads
+upsellit.com
+! chat widgets
+custhelp.com
+forms.hubspot.com
+widget.intercom.io
+rightnowtech.com
+voicestar.com
+widget.uservoice.com
+! may break subscriptions/logins
+tinypass.com
