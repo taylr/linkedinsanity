@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201706262123
-! Checksum: yIieVdFSbHMnL7ZenQZm6g
+! Version: 201707071457
+! Checksum: j7ndlrzl4imCrHS844dlHw
 ! Title: Linkedinsanity rules
-! Last modified: 26 June 2017 21:23 UTC
+! Last modified: 07 July 2017 14:57 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -35,8 +35,16 @@ linkedin.com##li#app-launcher-nav-item
 linkedin.com##section.mn-abi-form
 linkedin.com##div[class*=jobs-upsell]
 linkedin.com##a[class*=premium-upsell]
+linkedin.com##div#reg-upsell
 ! trick you into uploading your address book
 linkedin.com##div[class*=mn-wylo-promo]
+! diversions from current page
+linkedin.com##div.name-search
+linkedin.com##div.jserp
+! tracking where you go/what you do
+linkedin.com/mob/tracking
+linkedin.com/li/track
+linkedin.com/lite/ua/error
 !
 !! Twitter
 !
