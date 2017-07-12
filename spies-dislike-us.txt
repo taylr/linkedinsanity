@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: M5tOc5e9tRp0h0HeAt3oaQ
-! Version: 201707071624
+! Checksum: bUtZftvbe8zyRVHZFNPm5g
+! Version: 201707121742
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 07 July 2017 16:24 UTC
+! Last modified: 12 July 2017 17:42 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -11,22 +11,28 @@
 fls-na.amazon.com
 m.media-amazon.com
 unagi-na.amazon.com
+amazon-adsystem.com
 ! facebook
 fbcdn-profile-a.akamaihd.net
 facebook.net
 external.xx.fbcdn.net
+! google
+adsensecustomsearchads.com
 ! disqus
 disqus.com
 ! dedicated ID trackers
 amp.ai
 origin.ih.constantcontact.com
+certona.com
 conductrics.com
 crwdcntrl.net
-dynamicyield.com
 js.driftt.com
+dynamicyield.com
+ecorebates.com
 fullstory.com
 gaps.com
 gigya.com
+hsappstatic.net
 janrain.com
 livefyre.com
 madkudu.com
@@ -36,29 +42,50 @@ pehub.com
 rpxnow.com
 stacksocial.com
 tapad.com
+pixel.tapad.com
 theplatform.com
 truste.com
 visitor-analytics.io
 wfxtriggers.com
-! pixel/beacons
+! pixel/beacons/bugs
 dynbeacon.global.ssl.fastly.net
+gotraffic.net
+hlserve.com
 tracking-plan.herokuapp.com
+js.hs-scripts.com
+js.hscta.net
 tempo.inc.com
 xid.nightmarejs.org
 prweb.com
 ! spy on page activity/usage
+personalization.bloomberg.com
 crlog-crcn.adobe.com
+chartbeat.com
+conviva.com
+ensighten.com
+hubspot.com
+mautic.net
 surf.nbcuni.com
+customerevents.netflix.com
+markmonitor.com
+push.prod.netflix.com
+qualtrics.com
 log.quora.com
 ravenjs.com
+res-x.com
 error-collector.ted.com
+w55c.net
 ! spy on location
+location.bloomberg.com
 geo.query.yahoo.com
 ! media junk
 foxnewsplayer-a.akamaihd.net
+plugin.mediavoice.com
 videos.zillowstatic.com
 ! infests many pages without benefit
 browser-update.org
+ghbtns.com
+splash-screen.net
 ! sketching image/media hosts
 mat1.gtimg.com
 ! squatter ads
@@ -67,8 +94,18 @@ upsellit.com
 custhelp.com
 forms.hubspot.com
 widget.intercom.io
+lptag.liveperson.net
 rightnowtech.com
 voicestar.com
 widget.uservoice.com
+zopim.com
 ! may break subscriptions/logins
 tinypass.com
+! fonts
+performance.typekit.net
+fonts.walmart.com
+! sponsored links and content
+bazaarvoice.com
+newscred.com
+! push junk
+messaging-notifications.api.nytimes.com
