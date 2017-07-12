@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201707071457
-! Checksum: j7ndlrzl4imCrHS844dlHw
+! Version: 201707121748
+! Checksum: +qJTOLMR5iT+AFDP9v3lKw
 ! Title: Linkedinsanity rules
-! Last modified: 07 July 2017 14:57 UTC
+! Last modified: 12 July 2017 17:48 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -60,8 +60,16 @@ amazon.com##div[class*=digital-dash-gateway]
 amazon.com##div.huc-first-upsell-row
 amazon.com##div.huc-last-upsell-rows
 amazon.com##div[id*=-upsell-]
-amazon.com##div.hows-my-search
-amazon.com##div.sc-rec-bottom
 ! Recommendations, History, Featured (RHF) is delayed -- block the HTML fetch
 amazon.com##div.rhf
+amazon.com##div.rhf-frame
+amazon.com##div#rhf-error
 amazon.com/gp/recent-history-footer/external/rhf-handler.html
+amazon.com##div#sc-rec-bottom
+amazon.com##div#sc-rec-right
+amazon.com##div#sc-new-upsell
+amazon.com##div#btfContent
+amazon.com##div.bestsellers
+amazon.com##div#sidebarbtf
+amazon.com##div#centerBelowExtraHowsMySearch
+amazon.com##div#hows-my-search
