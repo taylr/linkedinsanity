@@ -43,7 +43,8 @@ def validate(data):
   if checksum == expectedChecksum:
     print('Checksum is valid')
   else:
-    print('Wrong checksum: found %s, expected %s' % (checksum, expectedChecksum))
+    print(f'check {type(checksum)} vs expected {type(expectedChecksum)}')
+    print(f'Wrong checksum: found {checksum}, expected {expectedChecksum}')
 
 def extractChecksum(data):
   match = re.search(checksumRegexp, data)
@@ -52,7 +53,7 @@ def extractChecksum(data):
 def calculateChecksum(data):
   md5 = hashlib.md5()
   md5.update(normalize(data).encode('utf-8'))
-  return base64.b64encode(md5.digest()).rstrip(b'=')
+  return base64.b64encode(md5.digest()).rstrip(b'=').decode('utf-8')
 
 def normalize(data):
   data = re.sub(r'\r', '', data)
@@ -65,7 +66,7 @@ def readStream(stream):
   try:
     return reader.read()
   except Exception as e:
-    raise Exception('Failed reading data, most likely not encoded as UTF-8:\n%s' % e)
+    raise Exception(f'Failed reading data, most likely not encoded as UTF-8:\n{e}')
 
 if __name__ == '__main__':
   validate(readStream(sys.stdin))
