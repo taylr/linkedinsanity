@@ -1,17 +1,20 @@
 [Adblock Plus 2.0]
-! Checksum: bUtZftvbe8zyRVHZFNPm5g
-! Version: 201707121742
+! Checksum: BGmvmnJgQqt8rZG629bANw
+! Version: 201707131503
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 12 July 2017 17:42 UTC
+! Last modified: 13 July 2017 15:03 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
 !--------------------------------------------------------------------!
 ! amazon
-fls-na.amazon.com
-m.media-amazon.com
+amazon.com/empty.gif
+amazon.com/mn/search/uedata/
+fls-na.amazon.com/*/amazon-clicks/
 unagi-na.amazon.com
 amazon-adsystem.com
+m.media-amazon.com/images/*/AMSSponsoredSearch
+ssl-images-amazon.com/images/*/ClientSideMetricsAUIJavascript
 ! facebook
 fbcdn-profile-a.akamaihd.net
 facebook.net
