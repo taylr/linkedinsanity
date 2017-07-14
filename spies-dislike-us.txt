@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: XhlDUh/ZisbCqDBbtRvdbg
-! Version: 201707131518
+! Checksum: XXVVAh69i0Zd6j772SuBqw
+! Version: 201707141356
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 13 July 2017 15:18 UTC
+! Last modified: 14 July 2017 13:56 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -61,6 +61,7 @@ tempo.inc.com
 xid.nightmarejs.org
 prweb.com
 ! spy on page activity/usage
+art19.com
 personalization.bloomberg.com
 crlog-crcn.adobe.com
 chartbeat.com
@@ -100,8 +101,9 @@ forms.hubspot.com
 widget.intercom.io
 lptag.liveperson.net
 rightnowtech.com
-voicestar.com
+tawk.to
 widget.uservoice.com
+voicestar.com
 zopim.com
 ! may break subscriptions/logins
 tinypass.com
