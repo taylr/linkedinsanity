@@ -43,7 +43,6 @@ def validate(data):
   if checksum == expectedChecksum:
     print('Checksum is valid')
   else:
-    print(f'check {type(checksum)} vs expected {type(expectedChecksum)}')
     print(f'Wrong checksum: found {checksum}, expected {expectedChecksum}')
 
 def extractChecksum(data):
