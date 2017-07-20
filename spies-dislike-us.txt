@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: XXVVAh69i0Zd6j772SuBqw
-! Version: 201707141356
+! Checksum: 4Qyr2mu6QFvfiKHXsFW66Q
+! Version: 201707201942
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 14 July 2017 13:56 UTC
+! Last modified: 20 July 2017 19:42 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -21,10 +21,13 @@ facebook.net
 external.xx.fbcdn.net
 ! google
 adsensecustomsearchads.com
+googlesyndication.com
+googletagmanager.com
 ! disqus
 disqus.com
 ! dedicated ID trackers
 amp.ai
+bat.bing.com
 origin.ih.constantcontact.com
 certona.com
 conductrics.com
@@ -32,17 +35,22 @@ crwdcntrl.net
 js.driftt.com
 dynamicyield.com
 ecorebates.com
+footprint.ne
 fullstory.com
 gaps.com
 gigya.com
 hsappstatic.net
 janrain.com
+lightboxcdn.com
 livefyre.com
 madkudu.com
+cdn-images.mailchimp.com
 marketo.net
+nile.works
 optnmstr.com
 pehub.com
 rpxnow.com
+sspinc.io
 stacksocial.com
 tapad.com
 pixel.tapad.com
@@ -51,6 +59,7 @@ truste.com
 visitor-analytics.io
 wfxtriggers.com
 ! pixel/beacons/bugs
+beacon.cracked.com
 dynbeacon.global.ssl.fastly.net
 gotraffic.net
 hlserve.com
@@ -63,21 +72,28 @@ prweb.com
 ! spy on page activity/usage
 art19.com
 personalization.bloomberg.com
-crlog-crcn.adobe.com
 chartbeat.com
 conviva.com
+crazyegg.com
+crlog-crcn.adobe.com
 ensighten.com
+heapanalytics.com
 hubspot.com
 mautic.net
+segment.io
 surf.nbcuni.com
 customerevents.netflix.com
 markmonitor.com
+moovweb.net
+newrelic.com
 push.prod.netflix.com
 qualtrics.com
+listrakbi.com
 log.quora.com
 ravenjs.com
 res-x.com
 error-collector.ted.com
+trackjs.com
 w55c.net
 ! spy on location
 location.bloomberg.com
@@ -89,7 +105,11 @@ videos.zillowstatic.com
 ! infests many pages without benefit
 browser-update.org
 ghbtns.com
+newsinc.com
+outbrain.com
+shopperapproved.com
 splash-screen.net
+wpdigital.net
 ! sketching image/media hosts
 mat1.gtimg.com
 ! squatter ads
@@ -101,9 +121,11 @@ forms.hubspot.com
 widget.intercom.io
 lptag.liveperson.net
 rightnowtech.com
+salesforceliveagent.com
 tawk.to
 widget.uservoice.com
 voicestar.com
+zendesk.com
 zopim.com
 ! may break subscriptions/logins
 tinypass.com
@@ -113,6 +135,7 @@ fonts.walmart.com
 ! sponsored links and content
 bazaarvoice.com
 newscred.com
+tqn.com
 yotpo.com
 ! push junk
 messaging-notifications.api.nytimes.com
