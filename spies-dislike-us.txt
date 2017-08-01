@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 4Qyr2mu6QFvfiKHXsFW66Q
-! Version: 201707201942
+! Checksum: CZm/hXF4pq8pcKXiNWewwQ
+! Version: 201708011344
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 20 July 2017 19:42 UTC
+! Last modified: 01 August 2017 13:44 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -15,6 +15,7 @@ unagi-na.amazon.com
 amazon-adsystem.com
 m.media-amazon.com/images/*/AMSSponsoredSearch
 ssl-images-amazon.com/images/*/ClientSideMetricsAUIJavascript
+ams-ads-cornerstone-creatives.s3.amazonaws.com
 ! facebook
 fbcdn-profile-a.akamaihd.net
 facebook.net
@@ -47,6 +48,7 @@ madkudu.com
 cdn-images.mailchimp.com
 marketo.net
 nile.works
+pixel.nymag.com
 optnmstr.com
 pehub.com
 rpxnow.com
@@ -70,6 +72,7 @@ tempo.inc.com
 xid.nightmarejs.org
 prweb.com
 ! spy on page activity/usage
+evite-analytics.appspot.com
 art19.com
 personalization.bloomberg.com
 chartbeat.com
@@ -95,19 +98,28 @@ res-x.com
 error-collector.ted.com
 trackjs.com
 w55c.net
+youbora.com
 ! spy on location
 location.bloomberg.com
 geo.query.yahoo.com
 ! media junk
 foxnewsplayer-a.akamaihd.net
+jwplatform.com
+content.jwplatform.com
 plugin.mediavoice.com
+ooyala.com
+smartplugin.youbora.com
 videos.zillowstatic.com
 ! infests many pages without benefit
+addevent.com
 browser-update.org
 ghbtns.com
+juicer.io
 newsinc.com
+oneall.com
 outbrain.com
 shopperapproved.com
+singleplatform.com
 splash-screen.net
 wpdigital.net
 ! sketching image/media hosts
@@ -139,3 +151,13 @@ tqn.com
 yotpo.com
 ! push junk
 messaging-notifications.api.nytimes.com
+! ads
+brightcove.com
+sadmin.brightcove.com
+players.brightcove.net
+partners.evitecdn.com
+fwmrm.net
+freewheel.tv
+manta.com
+mybuys.com
+teeitupmarketing.com
