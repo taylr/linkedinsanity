@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201707201946
-! Checksum: N7MdrPyLx9Bise0N2QVrQw
+! Version: 201708161730
+! Checksum: 8mlTWKGq84X6ryXLzbQVtw
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 20 July 2017 19:46 UTC
+! Last modified: 16 August 2017 17:30 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -15,10 +15,12 @@ linkedin.com##article[class*="sponsored"]
 linkedin.com##article[class*="pymk"]
 linkedin.com##article[class*="jymbii"]
 linkedin.com##article[class*="lynda"]
-! messenger
+! messenger and spying on your presence
 linkedin.com##aside#msg-overlay
+linkedin.com/voyager/api/messaging/presenceStatuses
 ! follows
 linkedin.com##div[class*="feed-s-follows-module"]
+linkedin.com##button[class*=follow-button]
 ! click bait
 linkedin.com##div.search-s-news-module
 linkedin.com##article.feed-s-update--channel
@@ -35,8 +37,10 @@ linkedin.com##li#app-launcher-nav-item
 linkedin.com##section.mn-abi-form
 linkedin.com##div[class*=jobs-upsell]
 linkedin.com##a[class*=premium-upsell]
+linkedin.com##div[class*=premium-upsell]
 linkedin.com##div.reg-upsell
 linkedin.com##button[class*="cta--"]
+linkedin.com##ul.recruiter-upsell
 ! trick you into uploading your address book
 linkedin.com##div[class*=mn-wylo-promo]
 linkedin.com##article.feed-s-update--promo
@@ -95,3 +99,5 @@ amazon.com##div.prime-ad-banner-content
 !! Github
 !
 github.com##div[class*=octofication]
+github.com##div[class*=signup-prompt]
+github.com##div.js-notice
