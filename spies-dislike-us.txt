@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: CZm/hXF4pq8pcKXiNWewwQ
-! Version: 201708011344
+! Checksum: bFAbyNtuFiSkj9S+n5UiGw
+! Version: 201708161734
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 01 August 2017 13:44 UTC
+! Last modified: 16 August 2017 17:34 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -57,6 +57,8 @@ stacksocial.com
 tapad.com
 pixel.tapad.com
 theplatform.com
+tiqcdn.com
+tags.tiqcdn.com
 truste.com
 visitor-analytics.io
 wfxtriggers.com
@@ -72,6 +74,8 @@ tempo.inc.com
 xid.nightmarejs.org
 prweb.com
 ! spy on page activity/usage
+50belowinc.com
+stats.50belowinc.com
 evite-analytics.appspot.com
 art19.com
 personalization.bloomberg.com
@@ -80,10 +84,14 @@ conviva.com
 crazyegg.com
 crlog-crcn.adobe.com
 ensighten.com
+go-mpulse.net
+c.go-mpulse.net
 heapanalytics.com
 hubspot.com
+listrakbi.com
 mautic.net
 segment.io
+soasta.com
 surf.nbcuni.com
 customerevents.netflix.com
 markmonitor.com
@@ -91,13 +99,15 @@ moovweb.net
 newrelic.com
 push.prod.netflix.com
 qualtrics.com
-listrakbi.com
 log.quora.com
 ravenjs.com
 res-x.com
 error-collector.ted.com
 trackjs.com
+viafoura.com
+viafoura.net
 w55c.net
+qoe.yottaa.com
 youbora.com
 ! spy on location
 location.bloomberg.com
@@ -106,12 +116,17 @@ geo.query.yahoo.com
 foxnewsplayer-a.akamaihd.net
 jwplatform.com
 content.jwplatform.com
+snippet.minute.ly
+minute.ly
 plugin.mediavoice.com
 ooyala.com
+siteminds.net
 smartplugin.youbora.com
 videos.zillowstatic.com
 ! infests many pages without benefit
 addevent.com
+apptentive.com
+sdk.apptentive.com
 browser-update.org
 ghbtns.com
 juicer.io
@@ -127,6 +142,8 @@ mat1.gtimg.com
 ! squatter ads
 upsellit.com
 ! chat widgets
+chatra.io
+call.chatra.io
 clickdesk.com
 custhelp.com
 forms.hubspot.com
@@ -153,11 +170,19 @@ yotpo.com
 messaging-notifications.api.nytimes.com
 ! ads
 brightcove.com
+comparecards.com
+cdn.comparecards.com
 sadmin.brightcove.com
 players.brightcove.net
 partners.evitecdn.com
 fwmrm.net
 freewheel.tv
+invisioncic.com
+content.invisioncic.com
 manta.com
 mybuys.com
+nbcudigitaladops.com
 teeitupmarketing.com
+tkqlhce.com
+tribl.io
+triblio.com
