@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: bFAbyNtuFiSkj9S+n5UiGw
-! Version: 201708161734
+! Checksum: CQHo41skUcjs73HgQBKF0g
+! Version: 201802251548
 ! Title: Spies Dislike Us Having Privacy
-! Last modified: 16 August 2017 17:34 UTC
+! Last modified: 25 February 2018 15:48 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -102,6 +102,8 @@ qualtrics.com
 log.quora.com
 ravenjs.com
 res-x.com
+rollbar.com
+api.rollbar.com
 error-collector.ted.com
 trackjs.com
 viafoura.com
