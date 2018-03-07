@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201802251557
-! Checksum: 4G1pIqJZtMSWSUcR9MaLhQ
+! Version: 201803071635
+! Checksum: 59dKTX/bP6cyWO07xLg8/g
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 25 February 2018 15:57 UTC
+! Last modified: 07 March 2018 16:35 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -34,6 +34,7 @@ linkedin.com##div[class*=feed-shared-news-]
 ! low quality tutorials
 linkedin.com##div[class*="-learning"]
 linkedin.com##section[class*=course-recommendations]
+linkedin.com##div#course-recommendations
 ! remove people-you-may-know filler from pages
 linkedin.com##section[class*="pymk"]
 ! remove navbar cruft
@@ -89,9 +90,12 @@ amazon.com##div#sc-new-upsell
 amazon.com##div#btfContent
 amazon.com##div.bestsellers
 amazon.com##div#sidebarbtf
+amazon.com##div[id*=_cust-recs]
+amazon.com##div#bia-hcb-widget
 ! search clutter
 amazon.com##div#centerBelowExtraHowsMySearch
 amazon.com##div#hows-my-search
+amazon.com##div.nav-flyout-sidePanel
 ! page ads and self promotion (incl. 3 ways of quick promotion)
 amazon.com##div#pdagEncapsulated
 amazon.com##div[id*=QuickPromo]
@@ -116,3 +120,11 @@ trello.com##a.header-woof
 !
 meetup.com##li#nav-notifications
 meetup.com##p.gtsy
+!
+!! Spirit
+!
+spirit.com##div.boardingPassBaggage
+spirit.com##div.boardingPassvertical
+spirit.com##div.boardingPassTravelinfo
+spirit.com##div.boardingPassTravepackgeText
+spirit.com##div.boardingPassBottomadd
