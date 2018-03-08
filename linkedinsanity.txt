@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201803071635
-! Checksum: 59dKTX/bP6cyWO07xLg8/g
+! Version: 201803081726
+! Checksum: YAEzOHWA+WfEVJtx39mOcg
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 07 March 2018 16:35 UTC
+! Last modified: 08 March 2018 17:26 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -16,6 +16,9 @@ linkedin.com##article[class*="pymk"]
 linkedin.com##article[class*=-pymk-]
 linkedin.com##article[class*="jymbii"]
 linkedin.com##article[class*="lynda"]
+linkedin.com##article:has-text(/Trending in (the)?/i)
+linkedin.com##article:has-text(/Editor'?s? Pick/i)
+linkedin.com##article:has-text(/Recommended for you/i)
 ! suggester annoyances
 linkedin.com##section[class*=mn-suggester]
 linkedin.com##section[class*=suggester]
@@ -31,6 +34,7 @@ linkedin.com##div.search-s-news-module
 linkedin.com##article.feed-s-update--channel
 linkedin.com##div.ge-profile-entry-card
 linkedin.com##div[class*=feed-shared-news-]
+linkedin.com##div[class*=shared-social-action]
 ! low quality tutorials
 linkedin.com##div[class*="-learning"]
 linkedin.com##section[class*=course-recommendations]
@@ -54,6 +58,7 @@ linkedin.com##article.promo-update--is-abi
 ! diversions from current page
 linkedin.com##div.name-search
 linkedin.com##div.jserp
+linkedin.com##artdeco-toasts
 ! tracking where you go/what you do
 linkedin.com/mob/tracking
 linkedin.com/li/track
@@ -63,6 +68,8 @@ linkedin.com##div.survey-questions
 linkedin.com##div.survey
 ! banner junk
 linkined.com##section[class*=ad-banner-]
+! Do not spam your network
+linkedin.com##div.sharing-share-box
 !
 !! Twitter
 !
