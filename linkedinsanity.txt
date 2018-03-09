@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201803081726
-! Checksum: YAEzOHWA+WfEVJtx39mOcg
+! Version: 201803091741
+! Checksum: GwcvHI8GLoFc/cXxFanzvA
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 08 March 2018 17:26 UTC
+! Last modified: 09 March 2018 17:41 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -19,6 +19,11 @@ linkedin.com##article[class*="lynda"]
 linkedin.com##article:has-text(/Trending in (the)?/i)
 linkedin.com##article:has-text(/Editor'?s? Pick/i)
 linkedin.com##article:has-text(/Recommended for you/i)
+linkedin.com##article:has-text(/ ?likes this/i)
+linkedin.com##article:has-text(/commented on this/i)
+linkedin.com##article.reshare-update
+linkedin.com##article.feed-shared-update--reshare
+linkedin.com##article:has-text(/'s comment on this/i)
 ! suggester annoyances
 linkedin.com##section[class*=mn-suggester]
 linkedin.com##section[class*=suggester]
