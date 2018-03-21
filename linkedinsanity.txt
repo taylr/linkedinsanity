@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201803211352
-! Checksum: l5sEua5XNMB58bg790qa/g
+! Version: 201803211423
+! Checksum: 6vEQ5yYkQ1YqZUHSqolojw
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 21 March 2018 13:52 UTC
+! Last modified: 21 March 2018 14:23 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -96,6 +96,7 @@ amazon.com##div.huc-first-upsell-row
 amazon.com##div#huc-v2-cobrand-stripe
 amazon.com##div.huc-last-upsell-rows
 amazon.com##div[id*=-upsell-]
+amazon.com##div.welcome-msg
 ! socialification annoyances
 amazon.com##div.amazon-follow
 amazon.com##div.pr-fb-intro-tooltip
@@ -112,6 +113,21 @@ amazon.com##div.bestsellers
 amazon.com##div#sidebarbtf
 amazon.com##div[id*=_cust-recs]
 amazon.com##div#bia-hcb-widget
+amazon.com##div.desktop-row:has-text(/recommendations for/i)
+amazon.com##div.desktop-row:has-text(/recommended for/i)
+amazon.com##div.desktop-row:has-text(/a night in/i)
+amazon.com##div.desktop-row:has-text(/gift ideas/i)
+amazon.com##div.desktop-row:has-text(/with free/i)
+amazon.com##div.fresh-shoveler
+amazon.com##div[id*=billboard]
+amazon.com##div[id*=editorial]
+amazon.com##div[id*=sidekick]
+amazon.com##div[id*=bia_]
+amazon.com##div.dealContainer
+amazon.com##div[id*=deals-]
+amazon.com##div[id*=nav-flyout-prime]
+amazon.com##ul[id*=recs-ysh]
+amazon.com##div[class*=ysh-]
 ! search clutter
 amazon.com##div#centerBelowExtraHowsMySearch
 amazon.com##div#hows-my-search
@@ -131,6 +147,7 @@ amazon.com##div#promoGrid
 amazon.com##div.featured:has-text(/sponsored/i)
 ! feature/ads clutter, especially in the side bar
 amazon.com##div#SendSample
+amazon.com##div[id*=sponsoredProducts]
 amazon.com##div#sponsoredProducts2_feature_div
 amazon.com##div#ebooksGiveGift_feature_div
 amazon.com##div#rightCol div#redeemCode_feature_div
@@ -169,3 +186,7 @@ spirit.com##div.boardingPassvertical
 spirit.com##div.boardingPassTravelinfo
 spirit.com##div.boardingPassTravepackgeText
 spirit.com##div.boardingPassBottomadd
+!
+!! MapMyRun
+!
+mapmyrun.com##section.product_carousel
