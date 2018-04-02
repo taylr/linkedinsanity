@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201803211423
-! Checksum: 6vEQ5yYkQ1YqZUHSqolojw
+! Version: 201804021631
+! Checksum: odPeVZKJeg+4sLjfhGd4UQ
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 21 March 2018 14:23 UTC
+! Last modified: 02 April 2018 16:31 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -72,7 +72,7 @@ linkedin.com/lite/ua/error
 linkedin.com##div.survey-questions
 linkedin.com##div.survey
 ! banner junk
-linkined.com##section[class*=ad-banner-]
+linkedin.com##section[class*=ad-banner-]
 ! Do not spam your network
 linkedin.com##div.sharing-share-box
 ! jobs junk and data collection
@@ -101,6 +101,7 @@ amazon.com##div.welcome-msg
 amazon.com##div.amazon-follow
 amazon.com##div.pr-fb-intro-tooltip
 ! Recommendations, History, Featured (RHF) is delayed -- block the HTML fetch
+amazon.com##div[id*=recommend]
 amazon.com##div.rhf
 amazon.com##div.rhf-frame
 amazon.com##div#rhf-error
