@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201804021631
-! Checksum: odPeVZKJeg+4sLjfhGd4UQ
+! Version: 201805031514
+! Checksum: DJd6xTLxQX/HZ8Nq7GprkQ
 ! Title: Linked Insanity Annoyance Rules
-! Last modified: 02 April 2018 16:31 UTC
+! Last modified: 05 May 2018 15:14 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -24,6 +24,11 @@ linkedin.com##article:has-text(/commented on this/i)
 linkedin.com##article.reshare-update
 linkedin.com##article.feed-shared-update--reshare
 linkedin.com##article:has-text(/'s comment on this/i)
+linkedin.com##div.occludable-update:has-text(/ ?likes this/i)
+linkedin.com##div.feed-shared-update:has-text(/likes this/)
+linkedin.com##div.feed-shared-update:has-text(/promoted/i)
+! attention economy annoyances
+linkedin.com##li#feed-nav-item span.nav-item__badge
 ! suggester annoyances
 linkedin.com##section[class*=mn-suggester]
 linkedin.com##section[class*=suggester]
@@ -40,9 +45,11 @@ linkedin.com##article.feed-s-update--channel
 linkedin.com##div.ge-profile-entry-card
 linkedin.com##div[class*=feed-shared-news-]
 linkedin.com##div[class*=shared-social-action]
+linkedin.com##a[href*="/career-advice/"]
 ! low quality tutorials
 linkedin.com##div[class*="-learning"]
 linkedin.com##section[class*=course-recommendations]
+linkedin.com##div.course-recommendations
 linkedin.com##div#course-recommendations
 ! remove people-you-may-know filler from pages
 linkedin.com##section[class*="pymk"]
@@ -64,10 +71,13 @@ linkedin.com##article.promo-update--is-abi
 linkedin.com##div.name-search
 linkedin.com##div.jserp
 linkedin.com##artdeco-toasts
+linkedin.com##div[class*=inline-promo]
 ! tracking where you go/what you do
 linkedin.com/mob/tracking
 linkedin.com/li/track
 linkedin.com/lite/ua/error
+linkedin.com/*analytics*.js
+linkedin.com/li/track
 ! surveys
 linkedin.com##div.survey-questions
 linkedin.com##div.survey
@@ -80,6 +90,7 @@ linkedin.com##div.pv-app-promo-section
 linkedin.com##div[class*=jobs-home-intent]
 linkedin.com##div[class*=intent-collector]
 linkedin.com##div[class*=jobs-home-referrals]
+linkedin.com##div.jobs-jymbii div[class*="-promo"]
 !
 !! Twitter
 !
@@ -191,3 +202,25 @@ spirit.com##div.boardingPassBottomadd
 !! MapMyRun
 !
 mapmyrun.com##section.product_carousel
+mapmyrun.com##section#registration_tout
+!
+!! Garmin Connect Annoyances
+!
+connect.garmin.com##div#activityYouTubePlaceholder
+connect.garmin.com##div#activityPhotosPlaceholder
+connect.garmin.com##div[class*=activity-badges]
+connect.garmin.com##span.entry-like
+connect.garmin.com##div.activity-tracking-wrapper
+connect.garmin.com##li.main-nav-item:has-text(/news feed/i)
+connect.garmin.com##li.main-nav-item:has-text(/insights/i)
+connect.garmin.com##li.main-nav-item:has-text(/badges/i)
+connect.garmin.com##div.note-container
+connect.garmin.com##div.comment-container
+!
+!! Zillow
+!
+zillow.com##div[id*=seller-lead-contact]
+! non-owner-occupied
+zillow.com##div[class*=noo-module]
+! upsells
+zillow.com##div[id*=-upsell]
