@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201805031514
-! Checksum: DJd6xTLxQX/HZ8Nq7GprkQ
-! Title: Linked Insanity Annoyance Rules
-! Last modified: 05 May 2018 15:14 UTC
+! Version: 201805171126
+! Checksum: 9tFxwPFBvrK0czaVG1zxIw
+! Title: Linked Insanity Annoyance Rules (uBlock Origin)
+! Last modified: 17 May 2018 11:26 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -216,6 +216,18 @@ connect.garmin.com##li.main-nav-item:has-text(/insights/i)
 connect.garmin.com##li.main-nav-item:has-text(/badges/i)
 connect.garmin.com##div.note-container
 connect.garmin.com##div.comment-container
+!
+!! Quora
+!
+quora.com##div[id*=_actionable]:has-text(/ad\s+by /)
+quora.com##div[id*=_actionable]:has-text(/promoted\s+by /)
+!
+!! Hacker News
+!
+! match "posts" you cannot vote on
+news.ycombinator.com##tr.athing:if-not(td.votelinks)
+! match table row subtext without points
+news.ycombinator.com##table.itemlist tr:has(td.subtext):if-not(td:has-text(/ points /))
 !
 !! Zillow
 !
