@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201805171126
-! Checksum: 9tFxwPFBvrK0czaVG1zxIw
+! Version: 201805221724
+! Checksum: bmZY513i6HdBDpfJBACrnA
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 17 May 2018 11:26 UTC
+! Last modified: 24 May 2018 17:24 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -27,6 +27,10 @@ linkedin.com##article:has-text(/'s comment on this/i)
 linkedin.com##div.occludable-update:has-text(/ ?likes this/i)
 linkedin.com##div.feed-shared-update:has-text(/likes this/)
 linkedin.com##div.feed-shared-update:has-text(/promoted/i)
+linkedin.com##div.occludable-update:has-text(/ ?commented on this/i)
+linkedin.com##div.feed-shared-update:has-text(/commented on this/)
+linkedin.com##div.feed-shared-update-attachments
+linkedin.com##div[class*=feed-shared-update-attachments]:has-text(/related /i)
 ! attention economy annoyances
 linkedin.com##li#feed-nav-item span.nav-item__badge
 ! suggester annoyances
@@ -204,6 +208,10 @@ spirit.com##div.boardingPassBottomadd
 mapmyrun.com##section.product_carousel
 mapmyrun.com##section#registration_tout
 !
+!! Racewire
+!
+racewire.com##div.mfp-figure div.lightbox-info-container
+!
 !! Garmin Connect Annoyances
 !
 connect.garmin.com##div#activityYouTubePlaceholder
@@ -219,8 +227,15 @@ connect.garmin.com##div.comment-container
 !
 !! Quora
 !
-quora.com##div[id*=_actionable]:has-text(/ad\s+by /)
-quora.com##div[id*=_actionable]:has-text(/promoted\s+by /)
+quora.com##div[id*=_actionable]:has-text(/ad\s+by /i)
+quora.com##div[id*=_actionable]:has-text(/promoted\s+by /i)
+quora.com##div[class*=PromptsList]:has-text(/ad\s+by /i)
+quora.com##div[class*=PromptsList]:has-text(/promoted\s+by /i)
+quora.com##div[class*=pagedlist_item]:has-text(/ad\s+by /i)
+quora.com##div[class*=pagedlist_item]:has-text(/promoted\s+by /i)
+quora.com##div[id*=_survey]
+quora.com##div[id*=question_prompt]
+quora.com##a[class*=AskQuestionButton]
 !
 !! Hacker News
 !
@@ -236,3 +251,14 @@ zillow.com##div[id*=seller-lead-contact]
 zillow.com##div[class*=noo-module]
 ! upsells
 zillow.com##div[id*=-upsell]
+!
+!! Indeed
+!
+indeed.com/pagead
+indeed.com##div#jobalertswrapper
+indeed.com##div#femp_list
+indeed.com##td#resultsCol div.row.clickcard[data-advn]
+!
+!! Forbes
+!
+forbes.com##div.vestpocket
