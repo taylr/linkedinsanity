@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201805221724
-! Checksum: bmZY513i6HdBDpfJBACrnA
+! Version: 201806041352
+! Checksum: vMBatDBg5Yj309nyxuuRLg
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 24 May 2018 17:24 UTC
+! Last modified: 04 Jun 2018 13:52 UTC
 ! Expires: 30 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -10,7 +10,7 @@
 !
 !! LinkedIn
 !
-! make the feed a lot more useful
+! match junk forced into the feed
 linkedin.com##article[class*="sponsored"]
 linkedin.com##article[class*="pymk"]
 linkedin.com##article[class*=-pymk-]
@@ -76,6 +76,7 @@ linkedin.com##div.name-search
 linkedin.com##div.jserp
 linkedin.com##artdeco-toasts
 linkedin.com##div[class*=inline-promo]
+linkedin.com##div.pv-go-to-connections-section
 ! tracking where you go/what you do
 linkedin.com/mob/tracking
 linkedin.com/li/track
@@ -142,6 +143,8 @@ amazon.com##div[id*=bia_]
 amazon.com##div.dealContainer
 amazon.com##div[id*=deals-]
 amazon.com##div[id*=nav-flyout-prime]
+amazon.com##div#nav-upnav
+amazon.com##div.nav-prime-tt
 amazon.com##ul[id*=recs-ysh]
 amazon.com##div[class*=ysh-]
 ! search clutter
@@ -161,6 +164,8 @@ amazon.com##div#giveaway_feature_div
 amazon.com##div.prime-ad-banner-content
 amazon.com##div#promoGrid
 amazon.com##div.featured:has-text(/sponsored/i)
+amazon.com##div.featured:has-text(/amazon giveaway/i)
+amazon.com##div.sc-java-remote-feature:has-text(/recommendation/i)
 ! feature/ads clutter, especially in the side bar
 amazon.com##div#SendSample
 amazon.com##div[id*=sponsoredProducts]
@@ -168,10 +173,13 @@ amazon.com##div#sponsoredProducts2_feature_div
 amazon.com##div#ebooksGiveGift_feature_div
 amazon.com##div#rightCol div#redeemCode_feature_div
 amazon.com##div#tellAFriendBylineBox_feature_div
+amazon.com##div[id*=tellAFriendBox]
+amazon.com##div[id*=tell-a-]
 amazon.com##div#wishlistButtonStack
 amazon.com##div#kcpApp_feature_div
 amazon.com##div[id*=giveaway]
-amazon.com##div.featured:has-text(/amazon giveaway/i)
+amazon.com##div[id*=auto-sparkle-]
+amazon.com##div#detail-ilm_div
 ! feedback data mining clutter
 amazon.com##iframe#iFrameHMD
 amazon.com##div.bucket:has-text(/tell us about/i)
@@ -187,6 +195,7 @@ github.com##div.js-notice
 !! Trello
 !
 trello.com##a.header-woof
+trello.com##a.home-feedback-link
 !
 !! Meetup
 !
@@ -262,3 +271,7 @@ indeed.com##td#resultsCol div.row.clickcard[data-advn]
 !! Forbes
 !
 forbes.com##div.vestpocket
+!
+!! YouTube
+!
+youtube.com##div[class*=ytp-ce-]
