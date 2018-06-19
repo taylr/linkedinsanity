@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 201806041352
-! Checksum: vMBatDBg5Yj309nyxuuRLg
+! Version: 201806181818
+! Checksum: KOVYMBs+rrAv0TfD402YXA
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 04 Jun 2018 13:52 UTC
-! Expires: 30 days (update frequency)
+! Last modified: 19 Jun 2018 18:18 UTC
+! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
 !--------------------------------------------------------------------!
@@ -24,6 +24,7 @@ linkedin.com##article:has-text(/commented on this/i)
 linkedin.com##article.reshare-update
 linkedin.com##article.feed-shared-update--reshare
 linkedin.com##article:has-text(/'s comment on this/i)
+linkedin.com##div[data-id*=lyndaCourse]
 linkedin.com##div.occludable-update:has-text(/ ?likes this/i)
 linkedin.com##div.feed-shared-update:has-text(/likes this/)
 linkedin.com##div.feed-shared-update:has-text(/promoted/i)
@@ -64,7 +65,7 @@ linkedin.com##li#app-launcher-nav-item
 linkedin.com##section.mn-abi-form
 linkedin.com##button[class*="cta--"]
 linkedin.com##a[class*=premium-upsell]
-linkedin.com##div[class*=-upsell]
+linkedin.com##[class*=upsell]
 linkedin.com##ul.recruiter-upsell
 ! trick you into uploading your address book
 linkedin.com##div[class*=mn-wylo-promo]
@@ -72,11 +73,19 @@ linkedin.com##article.feed-s-update--promo
 linkedin.com##article.promo-update
 linkedin.com##article.promo-update--is-abi
 ! diversions from current page
+linkedin.com##div.launchpad-wormhole
 linkedin.com##div.name-search
 linkedin.com##div.jserp
 linkedin.com##artdeco-toasts
 linkedin.com##div[class*=inline-promo]
 linkedin.com##div.pv-go-to-connections-section
+linkedin.com##button[id*=get_app]
+! fake profile views / who viewed my profile upsells and click bait
+linkedin.com##[class*=wvmp-mock]
+linkedin.com##article.me-wvmp-viewer-card--anon button[class*=__actionable]
+linkedin.com##li.me-wvmp-right-rail__action-item:has-text(/feed/i)
+linkedin.com##section.me-wvmp-right-rail h2:has-text(/matter/i)
+linkedin.com##section.me-wvmp-right-rail h3:has-text(/more views/i)
 ! tracking where you go/what you do
 linkedin.com/mob/tracking
 linkedin.com/li/track
@@ -117,6 +126,7 @@ amazon.com##div.welcome-msg
 amazon.com##div.amazon-follow
 amazon.com##div.pr-fb-intro-tooltip
 ! Recommendations, History, Featured (RHF) is delayed -- block the HTML fetch
+amazon.com##div[class*=featured-asin]
 amazon.com##div[id*=recommend]
 amazon.com##div.rhf
 amazon.com##div.rhf-frame
@@ -192,6 +202,13 @@ github.com##div[class*=octofication]
 github.com##div[class*=signup-prompt]
 github.com##div.js-notice
 !
+!! Google, Google docs
+!
+google.com##div.section-homepage-promo
+docs.google.com##div.docs-circle-promo-base
+docs.google.com##div.docs-explore-promo-base
+docs.google.com##div[class*=promo-base]
+!
 !! Trello
 !
 trello.com##a.header-woof
@@ -220,6 +237,11 @@ mapmyrun.com##section#registration_tout
 !! Racewire
 !
 racewire.com##div.mfp-figure div.lightbox-info-container
+!
+!! Reddit
+!
+reddit.com##div#onboarding-splash
+reddit.com##section.listingsignupbar
 !
 !! Garmin Connect Annoyances
 !
@@ -271,6 +293,14 @@ indeed.com##td#resultsCol div.row.clickcard[data-advn]
 !! Forbes
 !
 forbes.com##div.vestpocket
+!
+!! Yahoo Finance
+!
+finance.yahoo.com##div#mrt-node-Lead-1-FeatureBar
+finance.yahoo.com##div[data-test=fin-tradeit-container]
+finance.yahoo.com##a#uh-mail
+finance.yahoo.com##div[id*=ComboAd-]
+finance.yahoo.com##div[id*=-LinkOut]
 !
 !! YouTube
 !
