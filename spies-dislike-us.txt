@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: CQHo41skUcjs73HgQBKF0g
-! Version: 201802251548
-! Title: Spies Dislike Us Having Privacy
-! Last modified: 25 February 2018 15:48 UTC
-! Expires: 30 days (update frequency)
+! Checksum: pURgrIwi9RD0o1fjpRYvHg
+! Version: 201806181818
+! Title: Spies Dislike Us Having Privacy (uBlock Origin)
+! Last modified: 18 June 2018 18:18 UTC
+! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
 !--------------------------------------------------------------------!
@@ -80,6 +80,7 @@ evite-analytics.appspot.com
 art19.com
 personalization.bloomberg.com
 chartbeat.com
+s3.amazonaws.com/static.chartbeat.com
 conviva.com
 crazyegg.com
 crlog-crcn.adobe.com
