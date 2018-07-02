@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201806181818
-! Checksum: KOVYMBs+rrAv0TfD402YXA
+! Version: 201807021349
+! Checksum: K6mUw+mT1GQiH4T/tn05Lw
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 19 Jun 2018 18:18 UTC
+! Last modified: 02 July 2018 13:49 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -32,6 +32,11 @@ linkedin.com##div.occludable-update:has-text(/ ?commented on this/i)
 linkedin.com##div.feed-shared-update:has-text(/commented on this/)
 linkedin.com##div.feed-shared-update-attachments
 linkedin.com##div[class*=feed-shared-update-attachments]:has-text(/related /i)
+linkedin.com##div.feed-shared-update:has-text(/share of this/)
+linkedin.com##div.feed-shared-update:has-text(/editor's pick/i)
+! mining you for data
+linkedin.com##div#pds-ge-entry
+linkedin.com##div[class*=pds-ge-entry]
 ! attention economy annoyances
 linkedin.com##li#feed-nav-item span.nav-item__badge
 ! suggester annoyances
@@ -99,6 +104,7 @@ linkedin.com##div.survey
 linkedin.com##section[class*=ad-banner-]
 ! Do not spam your network
 linkedin.com##div.sharing-share-box
+linkedin.com##div[class*=shared-first-prompt]
 ! jobs junk and data collection
 linkedin.com##div.pv-app-promo-section
 linkedin.com##div[class*=jobs-home-intent]
@@ -213,6 +219,7 @@ docs.google.com##div[class*=promo-base]
 !
 trello.com##a.header-woof
 trello.com##a.home-feedback-link
+trello.com##a[class*=feedback-link]
 !
 !! Meetup
 !
@@ -290,6 +297,11 @@ indeed.com##div#jobalertswrapper
 indeed.com##div#femp_list
 indeed.com##td#resultsCol div.row.clickcard[data-advn]
 !
+!! Fidelity
+!
+fidelity.com##div.help-bubble--wrapper
+fidelity.com##div.help-bubble
+!
 !! Forbes
 !
 forbes.com##div.vestpocket
@@ -301,6 +313,20 @@ finance.yahoo.com##div[data-test=fin-tradeit-container]
 finance.yahoo.com##a#uh-mail
 finance.yahoo.com##div[id*=ComboAd-]
 finance.yahoo.com##div[id*=-LinkOut]
+!
+!! Namecheap
+!
+namecheap.com##li.make-offer.unavailable > div > a
+namecheap.com##div.make-offer.unavailable > div > a
+namecheap.com##div.featured-result.unavailable.make-offer
+!
+!! Glassdoor
+!
+glassdoor.com##div#jobsAwareness
+glassdoor.com##div#UserAlertBar
+glassdoor.com##div.fea-promo-banner
+glassdoor.com##div.employerTargeting
+glassdoor.com##div.careerAdvice
 !
 !! YouTube
 !
