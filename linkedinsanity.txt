@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201807021349
-! Checksum: K6mUw+mT1GQiH4T/tn05Lw
+! Version: 201807131845
+! Checksum: 6kmkgQwz7oRIRF8Zs3XFQg
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 02 July 2018 13:49 UTC
+! Last modified: 13 July 2018 18:45 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -85,6 +85,7 @@ linkedin.com##artdeco-toasts
 linkedin.com##div[class*=inline-promo]
 linkedin.com##div.pv-go-to-connections-section
 linkedin.com##button[id*=get_app]
+linkedin.com##div#directory
 ! fake profile views / who viewed my profile upsells and click bait
 linkedin.com##[class*=wvmp-mock]
 linkedin.com##article.me-wvmp-viewer-card--anon button[class*=__actionable]
@@ -116,6 +117,8 @@ linkedin.com##div.jobs-jymbii div[class*="-promo"]
 !
 twitter.com##.WhoToFollow
 twitter.com##.trends.Trends.module
+twitter.com##div.wtf-module
+twitter.com##div.HomeEmptyTimeline
 !
 !! Amazon
 !
@@ -201,6 +204,10 @@ amazon.com##iframe#iFrameHMD
 amazon.com##div.bucket:has-text(/tell us about/i)
 amazon.com##div#hmdFormDiv
 amazon.com##div.small:has-text(/Feedback/i)
+! nags
+amazon.com##div[class*=-overlay-container]
+amazon.com##a.kcpAppsPopOver
+amazon.com##div#FeatureAwarenessWidget
 !
 !! Github
 !
@@ -210,10 +217,13 @@ github.com##div.js-notice
 !
 !! Google, Google docs
 !
+inbox.google.com##div[jsaction*=quick_compose_select_smart_reply]
 google.com##div.section-homepage-promo
 docs.google.com##div.docs-circle-promo-base
 docs.google.com##div.docs-explore-promo-base
 docs.google.com##div[class*=promo-base]
+docs.google.com##div.waffle-assistant-entry
+docs.google.com##div.docs-explore-widget
 !
 !! Trello
 !
@@ -271,6 +281,8 @@ quora.com##div[class*=PromptsList]:has-text(/ad\s+by /i)
 quora.com##div[class*=PromptsList]:has-text(/promoted\s+by /i)
 quora.com##div[class*=pagedlist_item]:has-text(/ad\s+by /i)
 quora.com##div[class*=pagedlist_item]:has-text(/promoted\s+by /i)
+quora.com##div.layout_2col_main div:has-text(/ad\s+by /i)
+quora.com##div.layout_2col_main div:has-text(/promoted\s+by /i)
 quora.com##div[id*=_survey]
 quora.com##div[id*=question_prompt]
 quora.com##a[class*=AskQuestionButton]
@@ -313,6 +325,21 @@ finance.yahoo.com##div[data-test=fin-tradeit-container]
 finance.yahoo.com##a#uh-mail
 finance.yahoo.com##div[id*=ComboAd-]
 finance.yahoo.com##div[id*=-LinkOut]
+finance.yahoo.com##div[data-test=quote-mdl] > a[href*=utm_campaign]
+finance.yahoo.com##div[id*=FeatureBar]
+finance.yahoo.com##div[id*=QuoteVideo]
+finance.yahoo.com##a.comment-btn-link
+finance.yahoo.com##button[aria-label*="to like"]
+finance.yahoo.com##button[aria-label*="Share Menu"]
+! autoplay video and tracking
+||csp.yahoo.com/beacon^
+||csp.yahoo.com|
+s.yimg.com/*streamsense*
+finance.yahoo.com/*streamer-worker*.js
+||edgecast-livedax.yahoo.net^
+||finance.yahoo.com/_finance_doubledown^
+.vpg.cdn.yimg.com^
+||streamerapi.finance.yahoo.com^
 !
 !! Namecheap
 !
@@ -327,6 +354,17 @@ glassdoor.com##div#UserAlertBar
 glassdoor.com##div.fea-promo-banner
 glassdoor.com##div.employerTargeting
 glassdoor.com##div.careerAdvice
+!
+!! Yelp
+!
+yelp.com##div.coachmark-tooltip
+yelp.com##div.feed_trust-banner
+yelp.com##div.rateReview
+! raq == request a quote
+yelp.com##div.raq-module
+yelp.com##div.review-sidebar ul.action-link-list
+yelp.com##div.mapbox-text span[class*=-mobile]
+yelp.com##a.js-biz-to-phone
 !
 !! YouTube
 !
