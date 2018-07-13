@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201807131845
-! Checksum: 6kmkgQwz7oRIRF8Zs3XFQg
+! Version: 201807131855
+! Checksum: qpnnY2lWeVs6HpRHGVVHHg
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 13 July 2018 18:45 UTC
+! Last modified: 13 July 2018 18:55 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -281,8 +281,8 @@ quora.com##div[class*=PromptsList]:has-text(/ad\s+by /i)
 quora.com##div[class*=PromptsList]:has-text(/promoted\s+by /i)
 quora.com##div[class*=pagedlist_item]:has-text(/ad\s+by /i)
 quora.com##div[class*=pagedlist_item]:has-text(/promoted\s+by /i)
-quora.com##div.layout_2col_main div:has-text(/ad\s+by /i)
-quora.com##div.layout_2col_main div:has-text(/promoted\s+by /i)
+quora.com##div.layout_2col_main > div:has-text(/ad\s+by /i)
+quora.com##div.layout_2col_main > div:has-text(/promoted\s+by /i)
 quora.com##div[id*=_survey]
 quora.com##div[id*=question_prompt]
 quora.com##a[class*=AskQuestionButton]
