@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201807131855
-! Checksum: qpnnY2lWeVs6HpRHGVVHHg
+! Version: 201807231533
+! Checksum: d8WGj7FXSRVutVPrIcCi5w
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 13 July 2018 18:55 UTC
+! Last modified: 23 July 2018 15:33 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -119,6 +119,7 @@ twitter.com##.WhoToFollow
 twitter.com##.trends.Trends.module
 twitter.com##div.wtf-module
 twitter.com##div.HomeEmptyTimeline
+twitter.com##div.RelatedUsers
 !
 !! Amazon
 !
@@ -131,9 +132,11 @@ amazon.com##div#huc-v2-cobrand-stripe
 amazon.com##div.huc-last-upsell-rows
 amazon.com##div[id*=-upsell-]
 amazon.com##div.welcome-msg
+amazon.com##div[class*=student-overlay]
 ! socialification annoyances
 amazon.com##div.amazon-follow
 amazon.com##div.pr-fb-intro-tooltip
+amazon.com##div[id*=authorFollow]
 ! Recommendations, History, Featured (RHF) is delayed -- block the HTML fetch
 amazon.com##div[class*=featured-asin]
 amazon.com##div[id*=recommend]
@@ -199,6 +202,10 @@ amazon.com##div#kcpApp_feature_div
 amazon.com##div[id*=giveaway]
 amazon.com##div[id*=auto-sparkle-]
 amazon.com##div#detail-ilm_div
+amazon.com##div[id*=vse-related]
+amazon.com##div#marketing
+amazon.com##div#issuance-banner
+amazon.com##div.iss-ad-box
 ! feedback data mining clutter
 amazon.com##iframe#iFrameHMD
 amazon.com##div.bucket:has-text(/tell us about/i)
@@ -250,6 +257,10 @@ spirit.com##div.boardingPassBottomadd
 !
 mapmyrun.com##section.product_carousel
 mapmyrun.com##section#registration_tout
+mapmyrun.com##a[id*=tout_banner]
+mapmyrun.com##li.nav-shop
+mapmyrun.com##div#go_pro_advert
+mapmyrun.com##a:has-text(/ premium/i)
 !
 !! Racewire
 !
@@ -281,8 +292,6 @@ quora.com##div[class*=PromptsList]:has-text(/ad\s+by /i)
 quora.com##div[class*=PromptsList]:has-text(/promoted\s+by /i)
 quora.com##div[class*=pagedlist_item]:has-text(/ad\s+by /i)
 quora.com##div[class*=pagedlist_item]:has-text(/promoted\s+by /i)
-quora.com##div.layout_2col_main > div:has-text(/ad\s+by /i)
-quora.com##div.layout_2col_main > div:has-text(/promoted\s+by /i)
 quora.com##div[id*=_survey]
 quora.com##div[id*=question_prompt]
 quora.com##a[class*=AskQuestionButton]
