@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201807231533
-! Checksum: d8WGj7FXSRVutVPrIcCi5w
+! Version: 201808271942
+! Checksum: LAtIjt80EeY8NQ5b8dxc/Q
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 23 July 2018 15:33 UTC
+! Last modified: 27 August 2018 19:42 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -45,6 +45,15 @@ linkedin.com##section[class*=suggester]
 ! messenger and spying on your presence
 linkedin.com##aside#msg-overlay
 linkedin.com/voyager/api/messaging/presenceStatuses
+linkedin.com/voyager/api/learning/recommendations
+linkedin.com/voyager/api/feed/updates
+linkedin.com/voyager/api/onboarding/launchpadCard
+linkedin.com/voyager/api/feed/richRecommendedEntities
+linkedin.com/voyager/api/identity/localSkillExpertSuggestions
+linkedin.com/voyager/api/voyagerMessagingMailboxCounts
+linkedin.com/voyager/api/search/wwuAds
+linkedin.com/voyager/api/identity/profiles/*/promoVisibility
+linkedin.com/voyager/api/legoWidgetImpressionEvents
 ! follows
 linkedin.com##div[class*="feed-s-follows-module"]
 linkedin.com##div[class*=feed-follows-]
@@ -56,6 +65,7 @@ linkedin.com##div.ge-profile-entry-card
 linkedin.com##div[class*=feed-shared-news-]
 linkedin.com##div[class*=shared-social-action]
 linkedin.com##a[href*="/career-advice/"]
+linkedin.com##button.psa-modal-button
 ! low quality tutorials
 linkedin.com##div[class*="-learning"]
 linkedin.com##section[class*=course-recommendations]
@@ -98,6 +108,7 @@ linkedin.com/li/track
 linkedin.com/lite/ua/error
 linkedin.com/*analytics*.js
 linkedin.com/li/track
+linkedin.com/platform-telemetry
 ! surveys
 linkedin.com##div.survey-questions
 linkedin.com##div.survey
@@ -157,6 +168,9 @@ amazon.com##div.desktop-row:has-text(/recommended for/i)
 amazon.com##div.desktop-row:has-text(/a night in/i)
 amazon.com##div.desktop-row:has-text(/gift ideas/i)
 amazon.com##div.desktop-row:has-text(/with free/i)
+amazon.com##div[id*=featureAwareness]
+amazon.com##div.a-section:has-text(/recommended for /i)
+amazon.com##div.a-section:has-text(/recommendations/i)
 amazon.com##div.fresh-shoveler
 amazon.com##div[id*=billboard]
 amazon.com##div[id*=editorial]
@@ -232,6 +246,10 @@ docs.google.com##div[class*=promo-base]
 docs.google.com##div.waffle-assistant-entry
 docs.google.com##div.docs-explore-widget
 !
+!! google mail, gmail
+!
+!
+mail.google.com##div.brb  ! low value auto replies
 !! Trello
 !
 trello.com##a.header-woof
@@ -244,6 +262,7 @@ meetup.com##li#nav-notifications
 meetup.com##p.gtsy
 meetup.com##div.comment-item-likeButton
 meetup.com##div.event-share
+meetup.com##section.inPageFeedback
 !
 !! Spirit
 !
@@ -270,6 +289,12 @@ racewire.com##div.mfp-figure div.lightbox-info-container
 !
 reddit.com##div#onboarding-splash
 reddit.com##section.listingsignupbar
+reddit.com##div.login-required
+reddit.com##div.access-required
+reddit.com##div.read-next-container
+old.reddit.com##div.login-required
+old.reddit.com##div.access-required
+old.reddit.com##div.read-next-container
 !
 !! Garmin Connect Annoyances
 !
@@ -311,6 +336,30 @@ zillow.com##div[class*=noo-module]
 ! upsells
 zillow.com##div[id*=-upsell]
 !
+!! duckduckgo
+!
+duckduckgo.com##div[class*=feedback]
+duckduckgo.com##div.showcase
+duckduckgo.com##div.social
+!
+!! Ebay
+!
+ebay.com##li.s-item:has-text(/sponsored/i)
+!
+!! Hotels.com
+!
+hotels.com##li.sold-out
+hotels.com##div.reward-banner
+hotels.com##fieldset#filter-welcome-rewards
+hotels.com##div#urgency
+hotels.com##div[class*=secret-price-message]
+hotels.com##div[class*=welcome-rewards]
+hotels.com##div.teaser-carousel
+hotels.com##div.teaser
+hotels.com##div.text-to-download
+hotels.com##div.ftr-drive-direct
+hotels.com##div[class*=recommended-destinations]
+!
 !! Indeed
 !
 indeed.com/pagead
@@ -322,6 +371,10 @@ indeed.com##td#resultsCol div.row.clickcard[data-advn]
 !
 fidelity.com##div.help-bubble--wrapper
 fidelity.com##div.help-bubble
+fidelity.com##ul.offer-submenu
+fidelity.com##div#onsitemessage
+fidelity.com##div.legal-footer--below-content
+fidelity.com##div.legal-footer--item-content
 !
 !! Forbes
 !
@@ -340,6 +393,8 @@ finance.yahoo.com##div[id*=QuoteVideo]
 finance.yahoo.com##a.comment-btn-link
 finance.yahoo.com##button[aria-label*="to like"]
 finance.yahoo.com##button[aria-label*="Share Menu"]
+finance.yahoo.com##div[id*=ContentIFrame]
+finance.yahoo.com##div[id*=CanvassComments]
 ! autoplay video and tracking
 ||csp.yahoo.com/beacon^
 ||csp.yahoo.com|
@@ -349,6 +404,10 @@ finance.yahoo.com/*streamer-worker*.js
 ||finance.yahoo.com/_finance_doubledown^
 .vpg.cdn.yimg.com^
 ||streamerapi.finance.yahoo.com^
+!
+!! Mozilla
+!
+mozilla.org##div.SurveyNotice
 !
 !! Namecheap
 !
@@ -378,3 +437,4 @@ yelp.com##a.js-biz-to-phone
 !! YouTube
 !
 youtube.com##div[class*=ytp-ce-]
+youtube.com##paper-dialog.ytd-popup-container
