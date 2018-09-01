@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201808271942
-! Checksum: LAtIjt80EeY8NQ5b8dxc/Q
+! Version: 201809011912
+! Checksum: Ry+MoWYj4wSIVQ065H/XMg
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 27 August 2018 19:42 UTC
+! Last modified: 01 September 2018 19:12 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -169,8 +169,16 @@ amazon.com##div.desktop-row:has-text(/a night in/i)
 amazon.com##div.desktop-row:has-text(/gift ideas/i)
 amazon.com##div.desktop-row:has-text(/with free/i)
 amazon.com##div[id*=featureAwareness]
-amazon.com##div.a-section:has-text(/recommended for /i)
-amazon.com##div.a-section:has-text(/recommendations/i)
+amazon.com##div#content div.a-section:has-text(/recommended for /i)
+amazon.com##div#content div.a-section:has-text(/recommendations/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/recommended/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/recommendations/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/trending near/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/popular near/i)
+amazon.com##div#centerSlots div.acswidget-carousel:has-text(/featured/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row
+amazon.com##div.rcmBody
+amazon.com##div#centerSlots div.acsUxWidget
 amazon.com##div.fresh-shoveler
 amazon.com##div[id*=billboard]
 amazon.com##div[id*=editorial]
@@ -179,7 +187,6 @@ amazon.com##div[id*=bia_]
 amazon.com##div.dealContainer
 amazon.com##div[id*=deals-]
 amazon.com##div[id*=nav-flyout-prime]
-amazon.com##div#nav-upnav
 amazon.com##div.nav-prime-tt
 amazon.com##ul[id*=recs-ysh]
 amazon.com##div[class*=ysh-]
