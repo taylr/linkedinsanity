@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201809011912
-! Checksum: Ry+MoWYj4wSIVQ065H/XMg
+! Version: 201811191301
+! Checksum: 32EMJ54agyoOc0jPzLYqxg
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 01 September 2018 19:12 UTC
+! Last modified: 19 November 2018 13:01 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -34,9 +34,11 @@ linkedin.com##div.feed-shared-update-attachments
 linkedin.com##div[class*=feed-shared-update-attachments]:has-text(/related /i)
 linkedin.com##div.feed-shared-update:has-text(/share of this/)
 linkedin.com##div.feed-shared-update:has-text(/editor's pick/i)
+linkedin.com##div[class*=brand-fitz]
 ! mining you for data
 linkedin.com##div#pds-ge-entry
 linkedin.com##div[class*=pds-ge-entry]
+linkedin.com##a.salary-insight
 ! attention economy annoyances
 linkedin.com##li#feed-nav-item span.nav-item__badge
 ! suggester annoyances
@@ -66,6 +68,7 @@ linkedin.com##div[class*=feed-shared-news-]
 linkedin.com##div[class*=shared-social-action]
 linkedin.com##a[href*="/career-advice/"]
 linkedin.com##button.psa-modal-button
+linkedin.com##div.share-box
 ! low quality tutorials
 linkedin.com##div[class*="-learning"]
 linkedin.com##section[class*=course-recommendations]
@@ -102,6 +105,7 @@ linkedin.com##article.me-wvmp-viewer-card--anon button[class*=__actionable]
 linkedin.com##li.me-wvmp-right-rail__action-item:has-text(/feed/i)
 linkedin.com##section.me-wvmp-right-rail h2:has-text(/matter/i)
 linkedin.com##section.me-wvmp-right-rail h3:has-text(/more views/i)
+linkedin.com##div.pds-pcm-progress pds-profile-section
 ! tracking where you go/what you do
 linkedin.com/mob/tracking
 linkedin.com/li/track
@@ -123,6 +127,11 @@ linkedin.com##div[class*=jobs-home-intent]
 linkedin.com##div[class*=intent-collector]
 linkedin.com##div[class*=jobs-home-referrals]
 linkedin.com##div.jobs-jymbii div[class*="-promo"]
+! "discovery"
+linkedin.com##header[class*=mn-discovery]
+linkedin.com##section[class*=mn-discovery]
+!
+linkedin.com##div.nt-segment__empty-state-illustration
 !
 !! Twitter
 !
@@ -144,6 +153,7 @@ amazon.com##div.huc-last-upsell-rows
 amazon.com##div[id*=-upsell-]
 amazon.com##div.welcome-msg
 amazon.com##div[class*=student-overlay]
+amazon.com##div.pwOnboardingHintPopoverWrapper
 ! socialification annoyances
 amazon.com##div.amazon-follow
 amazon.com##div.pr-fb-intro-tooltip
@@ -190,10 +200,13 @@ amazon.com##div[id*=nav-flyout-prime]
 amazon.com##div.nav-prime-tt
 amazon.com##ul[id*=recs-ysh]
 amazon.com##div[class*=ysh-]
+amazon.com##div.hud-dashboard-card-v2:has-text(/recommended for/i)
+amazon.com##div.deal-of-the-day
 ! search clutter
 amazon.com##div#centerBelowExtraHowsMySearch
 amazon.com##div#hows-my-search
 amazon.com##div.nav-flyout-sidePanel
+amazon.com##div#osp-search
 ! page ads and self promotion (incl. 3 ways of quick promotion)
 amazon.com##div#nav-upnav
 amazon.com##div#pdagEncapsulated
@@ -209,6 +222,10 @@ amazon.com##div#promoGrid
 amazon.com##div.featured:has-text(/sponsored/i)
 amazon.com##div.featured:has-text(/amazon giveaway/i)
 amazon.com##div.sc-java-remote-feature:has-text(/recommendation/i)
+amazon.com##div.reviews-content div.review:has-text(/vine voice/i)
+amazon.com##div#centerSlots div.kepler-carousel-title
+amazon.com##div#centerSlots table.kepler-vendorSponsored-table
+amazon.com##div#centerSlots div.a-row hr.a-divider-normal
 ! feature/ads clutter, especially in the side bar
 amazon.com##div#SendSample
 amazon.com##div[id*=sponsoredProducts]
@@ -227,6 +244,7 @@ amazon.com##div[id*=vse-related]
 amazon.com##div#marketing
 amazon.com##div#issuance-banner
 amazon.com##div.iss-ad-box
+amazon.com##div#ccxsmartshelf_secondaryPanelContent
 ! feedback data mining clutter
 amazon.com##iframe#iFrameHMD
 amazon.com##div.bucket:has-text(/tell us about/i)
@@ -236,11 +254,16 @@ amazon.com##div.small:has-text(/Feedback/i)
 amazon.com##div[class*=-overlay-container]
 amazon.com##a.kcpAppsPopOver
 amazon.com##div#FeatureAwarenessWidget
+! checkout hijacking / complete your cart diversions and ads
+amazon.com##div.fresh-merchandised-p13n-widget-carousel-container
+amazon.com##div#body-features table.kepler-vendorSponsored-table
+amazon.com##div#body-features div.a-row hr.a-size-large
 !
 !! Github
 !
 github.com##div[class*=octofication]
 github.com##div[class*=signup-prompt]
+github.com##div.signup-prompt-bg
 github.com##div.js-notice
 !
 !! Google, Google docs
@@ -252,6 +275,9 @@ docs.google.com##div.docs-explore-promo-base
 docs.google.com##div[class*=promo-base]
 docs.google.com##div.waffle-assistant-entry
 docs.google.com##div.docs-explore-widget
+google.com##div.commercial-unit-desktop-top
+google.com##div#tvcap
+google.com##div#bottomads
 !
 !! google mail, gmail
 !
@@ -270,6 +296,7 @@ meetup.com##p.gtsy
 meetup.com##div.comment-item-likeButton
 meetup.com##div.event-share
 meetup.com##section.inPageFeedback
+meetup.com##div.tooltip-content
 !
 !! Spirit
 !
@@ -288,9 +315,21 @@ mapmyrun.com##li.nav-shop
 mapmyrun.com##div#go_pro_advert
 mapmyrun.com##a:has-text(/ premium/i)
 !
+!! strava
+!
+strava.com##div.footer-upsell
+strava.com##div#stravaCookieBanner
+!
 !! Racewire
 !
 racewire.com##div.mfp-figure div.lightbox-info-container
+!
+!! active.com
+!
+active.com##section[class*=promo]
+active.com##div[id*=gearup]
+active.com##section[class*=gearup]
+active.com##div[class*=aa-callout]
 !
 !! Reddit
 !
@@ -338,16 +377,24 @@ news.ycombinator.com##table.itemlist tr:has(td.subtext):if-not(td:has-text(/ poi
 !! Zillow
 !
 zillow.com##div[id*=seller-lead-contact]
+zillow.com##article#contact-tall
+zillow.com##article#contact-wide
+zillow.com##li#contact-menu
 ! non-owner-occupied
 zillow.com##div[class*=noo-module]
 ! upsells
 zillow.com##div[id*=-upsell]
+zillow.com##section#home-details-mortgage-module
+zillow.com##div.payment-calculator
+zillow.com##li:has(span[data-test-id=share-hdp-button])
+zillow.com##div.hdp-owner-view-upsell-listing-strength
 !
 !! duckduckgo
 !
 duckduckgo.com##div[class*=feedback]
 duckduckgo.com##div.showcase
 duckduckgo.com##div.social
+duckduckgo.com##div.footer
 !
 !! Ebay
 !
@@ -382,10 +429,15 @@ fidelity.com##ul.offer-submenu
 fidelity.com##div#onsitemessage
 fidelity.com##div.legal-footer--below-content
 fidelity.com##div.legal-footer--item-content
+fidelity.com##div#va-open-button
 !
 !! Forbes
 !
 forbes.com##div.vestpocket
+!
+!! cnbc
+!
+cnbc.com##div.bxc
 !
 !! Yahoo Finance
 !
@@ -411,6 +463,33 @@ finance.yahoo.com/*streamer-worker*.js
 ||finance.yahoo.com/_finance_doubledown^
 .vpg.cdn.yimg.com^
 ||streamerapi.finance.yahoo.com^
+! crammed broker ads
+finance.yahoo.com##div.broker-buttons
+yahoo.com##.adsbygoogle
+!
+!! yahoo fantasy sports
+!
+yahoo.com##div.Nav-fantasy div.Pbot-lg div.Section:has-text(/Daily Fantasy/i)
+yahoo.com##div.Nav-fantasy div.Pstart-30:has-text(/Other fantasy/i)
+yahoo.com##section#fantasyshop
+yahoo.com##section#celebrity_promo_league
+yahoo.com##section#livedraft-join-mod
+yahoo.com##section#fantasytrophypromo
+yahoo.com##section[id*=promo]
+yahoo.com##section#whatsnew
+yahoo.com##div#ysf-medal-notifications
+yahoo.com##div.ysf-medal
+yahoo.com##section#team-medals
+yahoo.com##img[src*=promo]
+yahoo.com##img[src*=gamead]
+yahoo.com##div.yui3-overlay-mask
+yahoo.com##div.yui3-overlay-modal
+yahoo.com##a.yfa-rapid-beacon
+yahoo.com##div[class*=surveymonkey]
+yahoo.com##section#rollover
+yahoo.com##div.fantasy-life-card
+yahoo.com##div#ffl-banner
+sports.yahoo.com##a#uh-mail
 !
 !! Mozilla
 !
@@ -421,6 +500,8 @@ mozilla.org##div.SurveyNotice
 namecheap.com##li.make-offer.unavailable > div > a
 namecheap.com##div.make-offer.unavailable > div > a
 namecheap.com##div.featured-result.unavailable.make-offer
+namecheap.com##div[class*="style__picks"]
+namecheap.com##div.domain-search-embed div:has-text(/suggested result/i)
 !
 !! Glassdoor
 !
@@ -445,3 +526,31 @@ yelp.com##a.js-biz-to-phone
 !
 youtube.com##div[class*=ytp-ce-]
 youtube.com##paper-dialog.ytd-popup-container
+!
+!! Fantasy Pros
+!
+fantasypros.com##div.slideout-promo
+fantasypros.com##div[class*=promo]
+!
+!! oddsshark
+!
+oddsshark.com##div#highlighted
+!
+!! General Assembly
+!
+generalassemb.ly##div.reveal-modal
+generalassemb.ly##div[data-new-user-lightbox-ip-address]
+!
+!! stack exchange
+!
+stackexchange.com##aside
+!
+!! urban dictionary
+!
+urbandictionary.com##span.cc-message
+urbandictionary.com##a[class*=addthis_button]
+urbandictionary.com##a.social-interaction
+urbandictionary.com##div#urban-top-bar
+urbandictionary.com##div.def-footer
+urbandictionary.com##div.thumbs
+urbandictionary.com##i.svgicon
