@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: m/0xm53aT/7Utg+BwQ1osA
-! Version: 201808260137
+! Checksum: qh7PQUaWCYIeEiHqqCzvcw
+! Version: 201811191303
 ! Title: Spies Dislike Us Having Privacy (uBlock Origin)
-! Last modified: 26 August 2018 01:37 UTC
+! Last modified: 19 November 2018 13:03 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -127,6 +127,7 @@ smartplugin.youbora.com
 videos.zillowstatic.com
 ! infests many pages without benefit
 addevent.com
+adtechus.com
 apptentive.com
 sdk.apptentive.com
 browser-update.org
@@ -149,6 +150,7 @@ call.chatra.io
 clickdesk.com
 custhelp.com
 forms.hubspot.com
+iflychat.com
 widget.intercom.io
 lptag.liveperson.net
 rightnowtech.com
