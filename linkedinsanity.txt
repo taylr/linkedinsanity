@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201906091925
-! Checksum: fykXtWkZ2AcH2ZDgcdVwSw
+! Version: 201906092206
+! Checksum: hY4wD/FEQBk2TyWDMWacGA
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 09 June 2019 19:25 UTC
+! Last modified: 09 June 2019 22:06 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -48,7 +48,6 @@ linkedin.com##section[class*=suggester]
 linkedin.com##aside#msg-overlay
 linkedin.com/voyager/api/messaging/presenceStatuses
 linkedin.com/voyager/api/learning/recommendations
-linkedin.com/voyager/api/feed/updates
 linkedin.com/voyager/api/onboarding/launchpadCard
 linkedin.com/voyager/api/feed/richRecommendedEntities
 linkedin.com/voyager/api/identity/localSkillExpertSuggestions
