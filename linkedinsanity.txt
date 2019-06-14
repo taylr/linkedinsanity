@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201906092206
-! Checksum: hY4wD/FEQBk2TyWDMWacGA
+! Version: 201906141748
+! Checksum: jAoztLApy89FnHSqvzWGiw
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 09 June 2019 22:06 UTC
+! Last modified: 14 June 2019 17:48 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -76,7 +76,6 @@ linkedin.com##div#course-recommendations
 ! remove people-you-may-know filler from pages
 linkedin.com##section[class*="pymk"]
 ! remove navbar cruft
-linkedin.com##li#spotlight-one-nav-item
 linkedin.com##li#app-launcher-nav-item
 ! remove upsells
 linkedin.com##section.mn-abi-form
@@ -146,7 +145,6 @@ linkedin.com##div.feed-shared-update-v2:has-text(/likes this/)
 linkedin.com##div.feed-shared-promo
 linkedin.com##div[class*=quick-replies]
 linkedin.com##div[data-scroll-name=because-you-viewed]
-linkedin.com##div#li-modal-container
 linkedin.com##ul.jobs-search-results__list > li[class*=list__item] :-abp-has(span.job-card-search__promoted-tag)
 linkedin.com##ul.search-typeahead-v2__history-list
 linkedin.com##li.jobs-search-box__search-starter--suggestion
