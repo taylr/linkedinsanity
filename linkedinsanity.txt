@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201906141748
-! Checksum: jAoztLApy89FnHSqvzWGiw
+! Version: 202011011412
+! Checksum: X7GlqjjADQEpzv4byt6eFw
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 14 June 2019 17:48 UTC
+! Last modified: 01 November 2020 14:12 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -154,6 +154,70 @@ linkedin.com##div#artdeco-global-alert-container
 linkedin.com##artdeco-tooltip-content
 linkedin.com##div#artdeco-hoverable-outlet
 linkedin.com##div#artdeco-toasts__wormhole
+! nag/fish for personal info
+linkedin.com##section[class*="gp-promo-"]
+linkedin.com##ul[class*="-promo_"]
+! right rail promo boxes
+linkedin.com##div.pv-content__right-rail > div.ember-view:-abp-has(div[class*=promo])
+linkedin.com##div.pv-content__right-rail > div.ember-view:-abp-has(ul[class*=promo])
+! more pymk
+linkedin.com##div[data-launchpad-scroll-anchor*="pymk"]
+linkedin.com##ul[class*=discover-entity]
+linkedin.com##li[class*=discover-entity]
+linkedin.com##ul[class*=pymk]
+linkedin.com##div[class*=pymk]
+! lame error/reload/engagement bait replacing junk
+linkedin.com##aside.mn-left-rail section.mn-error-state
+linkedin.com##footer[class*=__empty-state] button
+! fingerprinting?
+linkedin.com##code[id*=fingerprint]
+! nav bar notification nags
+linkedin.com##span.notification-badge--show
+!! jobs engagement spam
+linkedin.com##section.jobs-home-recent-searches
+!! ads/spying
+linkedin.com/csp/dtag
+linkedin.com##button.follow
+! sales nav "game-a-fication"
+linkedin.com##div.user-success-home
+! sales nav "recommended" searches and companies
+linkedin.com##div.recommendation-list
+! recent activity list on rhs -- some people might like this
+linkedin.com##div.recent-activity-list
+! floating help nag
+linkedin.com##div.global-nav-help-container
+linkedin.com##button:has-text(/skill quiz/i)
+! mining people-you-may-no
+linkedin.com##div.mn-cohorts-list
+! birthday call-to-action (cta)
+linkedin.com##div.pv-highlight-entity__cta-container
+! may know (mn-* ?) may know cohort / people you may know
+linkedin.com##ul.mn-cohorts-list
+linkedin.com##li[class*=mn-cohort-]
+! following nag in the feed
+linkedin.com##div.ember-view:-abp-has(div[class*="feed-*recommendations-header"])
+! alerts feed-style junk
+linkedin.com##section.alert-center__list
+||linkedin.com/voyager/api/search/history?action=update
+! nag logged out users to sign in
+linkedin.com##div.cta-modal.show
+! bait to include profile in another page
+linkedin.com##div.badge.right-rail-section
+! bait to sign up/log in
+linkedin.com##a[data-tracking-control-name="public_profile_see-all-posts"]
+linkedin.com##a[data-tracking-control-name="public_profile_badge"]
+! banner call-to-action
+linkedin.com##section.bottom-cta-banner
+! search engagement bait
+linkedin.com##div[class*=view]:-abp-has(> div[class*=search-feedback])
+!!! 2020-09-09 redesign clutter
+! rhs click bait
+linkedin.com##div.news-module
+linkedin.com##div.learning-top-courses
+! work aniversaries
+linkedin.com##div.feed-shared-update-v2:has-text(/their work anniversary/i)
+! secondary language nag
+linkedin.com##div[class*=add-secondary-language]
 !
 !! Twitter
 !
@@ -285,6 +349,57 @@ amazon.com##div#body-features div.a-row hr.a-size-large
 amazon.com##li.acs-private-brands-container-background
 amazon.com##div[id*=shopbylook]
 amazon.com##div[class*=shopbylook]
+amazon.com##div[class*="p13n-sc"]
+ssl-images-amazon.com/*/transparent-pixel*
+amazon.com##div.purchasedAsin:-abp-has(div[class*="replaced-asin"])
+amazon.com##div.a-section:-abp-has(span[id*=ad-feedback])
+amazon.com##div.s-search-results > div:-abp-has(span[cel_widget_id="SEARCH_RESULTS-SHOPPING_ADVISER"])
+amazon.com##div#sp_detail_thematic
+!! "themed" banner suggestions
+amazon.com##div#percolate-ui-ilm_div
+amazon.com##div.nav-signin-tt
+!! nags and upsell interruption of checking
+amazon.com##div[id*="-p13n-"]
+amazon.com##div[id*="before-you-go"]
+amazon.com##div.kepler-carousel-container:-abp-has(div.kepler-carousel-title span:has-text(/add.*your cart/i))
+amazon.com##div.kepler-carousel-container:-abp-has(div.kepler-carousel-title span:has-text(/coupon/i))
+!! trick you into installing browser extension that snoops on you everwhere
+amazon.com##div[class*=aa-install]
+!! ads on order details
+amazon.com##div[cel_widget_id*="desktop-yo-orderdetails_"]
+!! recommendation widget ??
+amazon.com##div.recsWidgetContainer
+!! upsells, self-promotion and ads on the page
+amazon.com##div.gw-card-layout div.video-player
+amazon.com##div.gw-card-layout div.celwidget:has-text(/learn more/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/see more/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/explore more/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/shop /i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/now available/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/browse now/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/start watching/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/watch.* now/i)
+# upsell widget
+amazon.com##div[data-cel-widget*=upsell]
+amazon.com##div[cel_widget_id*=upsell]
+# app nags
+amazon.com##span[id*=app-prompt]
+!! ads for other items (cerberus)
+amazon.com##div#cerberus_feature_div
+!! ads disguised as "advisor"
+amazon.com##div:-abp-has(> span[cel_widget_id*="SHOPPING_ADVISER"])
+!! "related" searches
+amazon.com##span[class*=related-searches]
+!! video spam
+amazon.com##div.s-result-item:-abp-has(span.sbv-video-single-product)
+!! email tracking
+amazon.com/gp/r.html
+! amazon session snooping
+||fls-na.amazon.com/1/batch/1/*$image
+||unagi-na.amazon.com
+||amazon.com/*uedata
+||amazon.com/gp/uedata*
+||amazon.com/gp/redirection/*
 !
 !! Crunchbase
 !
@@ -296,6 +411,12 @@ crunchbase.com/*/captcha/
 crunchbase.com/*/api/*/collector
 crunchbase.com/*/api/*/captcha
 crunchbase.com/*/init.js
+!! crunchbase
+crunchbase.com##overview-pro-upsell
+crunchbase.com##floating-help-button
+!! crunchbase.com##div.cdk-overlay-container   !! leads to locked page
+crunchbase.com##div.cdk-live-announcer-element
+crunchbase.com##native-ad
 !
 !! Github
 !
@@ -303,6 +424,10 @@ github.com##div[class*=octofication]
 github.com##div[class*=signup-prompt]
 github.com##div.signup-prompt-bg
 github.com##div.js-notice
+github.com##span.mail-status.unread
+github.com##span.unread.mail-status.js-indicator-modifier
+github.com##span.feature-preview-indicator
+github.com##div.user-status-container
 !
 !! Google, Google docs
 !
@@ -319,14 +444,34 @@ google.com##div#bottomads
 !
 !! google mail, gmail
 !
-!
 mail.google.com##div.brb  ! low value auto replies
+! begging for feedback
+google.com##div[class*=FeedbackSubmitFeedbackButton]
 !! Trello
 !
 trello.com##a.header-woof
 trello.com##a.home-feedback-link
 trello.com##a[class*=feedback-link]
 trello.com##a.header-notifications
+trello.com##div#header > div > div:-abp-has(button:has-text(/New/))
+! TOS nag
+trello.com##section[data-test-id*=header-notifications-popover] > div > div > div:has-text(/Terms of service Update/i)
+! upgrade nag / bait
+trello.com##div.boards-page-board-section-header-options > div:-abp-has(a[href*="/billing"])
+trello.com##a.upgrade-prompt-button
+trello.com##span[class*=upsell]
+trello.com##li[class*=upsell]
+trello.com##li[class*=menu-navigation] div[class*=upgrade]
+trello.com##li[class*=menu-navigation] div[class*=board-menu-prompt]
+trello.com##div[class*=ads-layout]
+trello.com##div[class*=ad-section]
+trello.com##li > div:-abp-has(div:has-text(/Upgrade this Team/i))
+! remove the "upgrade nag" specific rule removes button from being briefly visible
+trello.com##span[name="business-class"]
+trello.com##div:-abp-has(> button > div > span[name="business-class"])
+! less from atlassian please
+trello.com##button[data-test-id=atlassian-app-switcher]
+
 !
 !! Meetup
 !
@@ -336,6 +481,11 @@ meetup.com##div.comment-item-likeButton
 meetup.com##div.event-share
 meetup.com##section.inPageFeedback
 meetup.com##div.tooltip-content
+! meetup engagement bait
+meetup.com##div.gtm-motivation-cards
+meetup.com##div.gtm-seeded-events
+meetup.com##div.relatedEvents
+meetup.com##div.notifications--populated > ul.list > li:-abp-has(a[href*=group_announce])
 !
 !! Spirit
 !
@@ -386,6 +536,8 @@ old.reddit.com##div.login-required
 old.reddit.com##div.access-required
 old.reddit.com##div.read-next-container
 reddit.com##div.promoted
+reddit.com##div.happening-now-wrap
+reddit.com##div[id*=pinnable-content].pinned
 !
 !! Garmin Connect Annoyances
 !
@@ -439,6 +591,12 @@ zillow.com##section#home-details-mortgage-module
 zillow.com##div.payment-calculator
 zillow.com##li:has(span[data-test-id=share-hdp-button])
 zillow.com##div.hdp-owner-view-upsell-listing-strength
+!! zillow ads in list of sold homes
+zillow.com##div[id*=nav-ad]
+zillow.com##div[class*=nav-ad]
+!! tracking
+||e.zg-api.com/metrics/
+||zg-api.com/metrics/
 !
 !! duckduckgo
 !
@@ -481,6 +639,20 @@ fidelity.com##div#onsitemessage
 fidelity.com##div.legal-footer--below-content
 fidelity.com##div.legal-footer--item-content
 fidelity.com##div#va-open-button
+!! fidelity
+fidelity.com##va-assistant
+fidelity.com##va-assistant-app
+fidelity.com##div.va-chat
+! promotional
+fidelity.com##div.value-proposition
+! useless messages and "cards"
+fidelity.com##div#message00informational00EMSG
+fidelity.com##div.card-layout--card-content:-abp-has(div.syndicated-promo)
+fidelity.com##div.card-layout--card-content:-abp-has(div.news-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.top-movers-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.oppfin-sc-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.market-mover-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.market-chart-card-container)
 !
 !! Forbes
 !
@@ -495,6 +667,18 @@ bloomberg.com/*/init.js
 !! cnbc
 !
 cnbc.com##div.bxc
+!! CNBC ads pretending to be content
+cnbc.com##div[class*=Card-container]:-abp-has(a[href*="/select/"])
+cnbc.com##div[id*=CNBCSelect]
+cnbc.com##section:-abp-has(a[href*="/select/"])
+cnbc.com##li:-abp-has(a[href*="/select/"])
+! cnbc click bait
+cnbc.com##div[id*=TrendingNow]
+cnbc.com##div[id*=CNBCEvents]
+! nag you to email
+cnbc.com##div.Footer-info
+! upsell
+cnbc.com##div[class*=Card]:-abp-has(span.icon-probug)
 !
 !! Yahoo Finance
 !
@@ -601,6 +785,23 @@ yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Help"])
 yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Jobs"])
 ! don't give yahoo personal info
 yahoo.com##a.ys-personalize-link
+! yahoo fantasy
+sports.yahoo.com##div[id*="FantasySlatePromo"]
+sports.yahoo.com##div[id*="PromoImage"]
+sports.yahoo.com##div.ys-interstitial-container
+sports.yahoo.com##div[id*=Interstitial]
+sports.yahoo.com##div[id*=Seatgeek]
+fantasysports.yahoo.com##div[class*="pill-promo"]
+fantasysports.yahoo.com##div#cashchallenges
+fantasysports.yahoo.com##section#teamnotes div[data-target*="profiles.sports.yahoo.com"]
+!
+!! cbssports
+!
+cbssports.com##div[id*=promo]
+cbssports.com##aside[class*="-seo"]
+cbssports.com##div.LiveBlogStreamContainer
+cbssports.com##div.site-footer-partners
+cbssports.com##section.Newsletter-container
 !
 !! Mozilla
 !
@@ -617,6 +818,8 @@ namecheap.com##div.domain-search-embed div:has-text(/suggested result/i)
 namecheap.com##div.domain-search-embed > div:-abp-has(> h4:has-text(/Suggested Results/i) )
 namecheap.com##div[class*=searchHat] div[class*=featured]
 namecheap.com##div[class*=domainList] div[class*=products]
+namecheap.com##aside
+namecheap.com##div.info.site-msg:-abp-has(a[href*=promo])
 !
 !! Glassdoor
 !
@@ -642,6 +845,14 @@ yelp.com##div.raq-module
 yelp.com##div.review-sidebar ul.action-link-list
 yelp.com##div.mapbox-text span[class*=-mobile]
 yelp.com##a.js-biz-to-phone
+! sponsored listings
+yelp.com##section > div:-abp-has(a[href*=adredir])
+! yelp removes positive reviews unless you advertise
+yelp.com##section > div:-abp-has(div > div > div a[href="/advertiser_faq"])
+!
+!! open table
+!
+opentable.com##div#search_results_pop
 !
 !! YouTube
 !
@@ -652,10 +863,29 @@ youtube.com##paper-dialog.ytd-popup-container
 !
 fantasypros.com##div.slideout-promo
 fantasypros.com##div[class*=promo]
+! fantasypros
+fantasypros.com##section.deposit-offer
+fantasypros.com/css/top_banner.css
+fantasypros.com##div#top-banner
+fantasypros.com##div#customScoringModal.upgrade-modal
+fantasypros.com##div.modal-backdrop.in
+||cdn.fantasypros.com/realtime/media_trust.js
+! overlay nag for switching to redesign
+fantasypros.com##section#ecr-opt-in
+fantasypros.com##div.pcast-wrap
 !
 !! oddsshark
 !
 oddsshark.com##div#highlighted
+!
+!! actionnetwork
+!
+actionnetwork.com##[class*="affiliates-sidebar"]
+actionnetwork.com##[class*="odds-explainer"]
+actionnetwork.com##[class*="odds-tools"]
+actionnetwork.com##footer
+actionnetwork.com##div[class*=marketing-modal]
+actionnetwork.com##aside.best-odds__right-rail
 !
 !! General Assembly
 !
@@ -675,3 +905,54 @@ urbandictionary.com##div#urban-top-bar
 urbandictionary.com##div.def-footer
 urbandictionary.com##div.thumbs
 urbandictionary.com##i.svgicon
+!
+!! Chase
+!
+! ads & upsells
+chase.com##div.mktuiAds
+chase.com##div[class*="-ad"]
+chase.com##div[class*="mktuiOffer"]
+chase.com##div.credit-journey
+chase.com##div.ad
+!
+!! citi
+!
+! upsells and ads
+citi.com##linked-offer
+citi.com##offer-details
+!
+!! bankrate
+!
+bankrate.com##div[data-test=no-offer-box]
+bankrate.com##div.exit-intent-modal
+!
+!! uberconference
+!
+uberconference.com##div[id*=promo-]
+uberconference.com##a[id*=promo-]
+!
+!! drizly
+!
+drizly.com##section:-abp-has(div[class*=Account__ReferralTextContainer])
+drizly.com##div[class*=AddOnCarousel]
+drizly.com##section[class*=SeoTextBlock]
+drizly.com##div[class*=TopBar__Covid19]
+drizly.com##a[class*=OrderTracking__DesktopBannerContainer]
+drizly.com##nav[class*=Ribbon__Ribbon]:-abp-has(a[href*="/how-it-works"])
+!
+!! fedex
+!
+fedex.com##div.va_icon
+fedex.com##div#vaHeaderId
+fedex.com##div#nina-fedex
+!
+!! darksky
+!
+darksky.net##section:-abp-has(div.banner__alert__notification)
+!
+!! scribd
+!
+scribd.com##div[id*=DidYouKnow]
+scribd.com##li[id*=membership_info]
+scribd.com##div[class*=promo]
+scribd.com##div.share_document_wrapper
