@@ -1,0 +1,150 @@
+[Adblock Plus 2.0]
+! Version: 202112081539
+! Checksum: FkT9CgEwwTuh0B1wnOAp0g
+! Title: Fi-Nuance Finance Annoyance Rules (uBlock Origin)
+! Last modified: 08 December 2021 15:39 UTC
+! Expires: 7 days (update frequency)
+! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/fi-nuance.txt
+! Licence: MIT License
+!--------------------------------------------------------------------!
+!
+!! Crunchbase
+!
+crunchbase.com##[class*=upsell]
+crunchbase.com##[id*=lock]
+crunchbase.com/*/captcha.js
+crunchbase.com/rw7M6iAV/captcha/PXrw7M6iAV/captcha.js
+crunchbase.com/*/captcha/
+crunchbase.com/*/api/*/collector
+crunchbase.com/*/api/*/captcha
+crunchbase.com/*/init.js
+!! crunchbase
+crunchbase.com##overview-pro-upsell
+crunchbase.com##floating-help-button
+!! crunchbase.com##div.cdk-overlay-container   !! leads to locked page
+crunchbase.com##div.cdk-live-announcer-element
+crunchbase.com##native-ad
+!
+!! Fidelity
+!
+fidelity.com##div.help-bubble--wrapper
+fidelity.com##div.help-bubble
+fidelity.com##ul.offer-submenu
+fidelity.com##div#onsitemessage
+fidelity.com##div.legal-footer--below-content
+fidelity.com##div.legal-footer--item-content
+fidelity.com##div#va-open-button
+!! fidelity
+fidelity.com##va-assistant
+fidelity.com##va-assistant-app
+fidelity.com##div.va-chat
+! promotional
+fidelity.com##div.value-proposition
+! useless messages and "cards"
+fidelity.com##div#message00informational00EMSG
+fidelity.com##div.card-layout--card-content:-abp-has(div.syndicated-promo)
+fidelity.com##div.card-layout--card-content:-abp-has(div.news-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.top-movers-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.oppfin-sc-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.market-mover-card-container)
+fidelity.com##div.card-layout--card-content:-abp-has(div.market-chart-card-container)
+!
+!! Forbes
+!
+forbes.com##div.vestpocket
+!
+!! bloomberg
+!
+bloomberg.com/*/captcha
+bloomberg.com/*/captcha.js
+bloomberg.com/*/init.js
+!
+!! cnbc
+!
+cnbc.com##div.bxc
+!! CNBC ads pretending to be content
+cnbc.com##div[class*=Card-container]:-abp-has(a[href*="/select/"])
+cnbc.com##div[id*=CNBCSelect]
+cnbc.com##section:-abp-has(a[href*="/select/"])
+cnbc.com##li:-abp-has(a[href*="/select/"])
+! cnbc click bait
+cnbc.com##div[id*=TrendingNow]
+cnbc.com##div[id*=CNBCEvents]
+! nag you to email
+cnbc.com##div.Footer-info
+! upsell
+cnbc.com##div[class*=Card]:-abp-has(span.icon-probug)
+!
+!! Chase
+!
+! ads & upsells
+chase.com##div.mktuiAds
+chase.com##div[class*="-ad"]
+chase.com##div[class*="mktuiOffer"]
+chase.com##div.credit-journey
+chase.com##div.ad
+!
+!! citi
+!
+! upsells and ads
+citi.com##linked-offer
+citi.com##offer-details
+!
+!! bankrate
+!
+bankrate.com##div[data-test=no-offer-box]
+bankrate.com##div.exit-intent-modal
+!
+!! Yahoo Finance
+!
+finance.yahoo.com##div#mrt-node-Lead-1-FeatureBar
+finance.yahoo.com##div[data-test=fin-tradeit-container]
+finance.yahoo.com##a#uh-mail
+finance.yahoo.com##div[id*=ComboAd-]
+finance.yahoo.com##div[id*=-LinkOut]
+finance.yahoo.com##div[data-test=quote-mdl] > a[href*=utm_campaign]
+finance.yahoo.com##div[id*=FeatureBar]
+finance.yahoo.com##div[id*=QuoteVideo]
+finance.yahoo.com##a.comment-btn-link
+finance.yahoo.com##button[aria-label*="to like"]
+finance.yahoo.com##button[aria-label*="Share Menu"]
+finance.yahoo.com##div[id*=ContentIFrame]
+finance.yahoo.com##div[id*=CanvassComments]
+! autoplay video and tracking
+||csp.yahoo.com/beacon^
+||csp.yahoo.com|
+s.yimg.com/*streamsense*
+finance.yahoo.com/*streamer-worker*.js
+||edgecast-livedax.yahoo.net^
+||finance.yahoo.com/_finance_doubledown^
+.vpg.cdn.yimg.com^
+||streamerapi.finance.yahoo.com^
+! crammed broker ads
+finance.yahoo.com##div.broker-buttons
+yahoo.com##.adsbygoogle
+!
+!! paypal
+!
+paypal.com##div[class*=promo-widget]
+paypal.com##span.vx_notificationCount
+!
+!! Zillow
+!
+zillow.com##div[id*=seller-lead-contact]
+zillow.com##article#contact-tall
+zillow.com##article#contact-wide
+zillow.com##li#contact-menu
+! non-owner-occupied
+zillow.com##div[class*=noo-module]
+! upsells
+zillow.com##div[id*=-upsell]
+zillow.com##section#home-details-mortgage-module
+zillow.com##div.payment-calculator
+zillow.com##li:has(span[data-test-id=share-hdp-button])
+zillow.com##div.hdp-owner-view-upsell-listing-strength
+!! zillow ads in list of sold homes
+zillow.com##div[id*=nav-ad]
+zillow.com##div[class*=nav-ad]
+!! tracking
+||e.zg-api.com/metrics/
+||zg-api.com/metrics/
