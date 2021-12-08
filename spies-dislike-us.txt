@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: qh7PQUaWCYIeEiHqqCzvcw
-! Version: 201811191303
+! Checksum: NeodAqU/Zj7ZEwekOzPxjA
+! Version: 202112081539
 ! Title: Spies Dislike Us Having Privacy (uBlock Origin)
-! Last modified: 19 November 2018 13:03 UTC
+! Last modified: 08 December 2021 15:39 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt
 ! Licence: MIT License
@@ -24,6 +24,9 @@ external.xx.fbcdn.net
 adsensecustomsearchads.com
 googlesyndication.com
 googletagmanager.com
+!! gmail logging
+/log$domain=play.google.com
+/ui/v1/icons/mail/images/cleardot.gif$domain=ssl.gstatic.com
 ! disqus
 disqus.com
 ! dedicated ID trackers
@@ -190,3 +193,19 @@ teeitupmarketing.com
 tkqlhce.com
 tribl.io
 triblio.com
+!
+!! wordpress snooping
+!
+/wp-statistics/v2/hit*
+!
+!! google maps tracking
+!
+maps.googleapis.com/maps/api/js/QuotaService
+!
+!! google docs tracking
+!
+!! google docs tracking
+||play.google.com/log*$xmlhttprequest,websocket
+||docs.google.com/*/jserror*$xmlhttprequest,websocket
+docs.google.com##div.modal-dialog-bg
+docs.google.com##div.modal-dialog.docs-dialog:-abp-has(span[style="display: none;"].modal-dialog-title-close)
