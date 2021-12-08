@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 202011011412
-! Checksum: X7GlqjjADQEpzv4byt6eFw
+! Version: 202112081539
+! Checksum: dEqtmpABLEEyC7uNCWuUAA
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 01 November 2020 14:12 UTC
+! Last modified: 08 December 2021 15:39 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -166,6 +166,23 @@ linkedin.com##ul[class*=discover-entity]
 linkedin.com##li[class*=discover-entity]
 linkedin.com##ul[class*=pymk]
 linkedin.com##div[class*=pymk]
+!! linkedin pymk api
+linkedin.com/voyager/api/relationships/discovery^
+linkedin.com/voyager/api/relationships/cohorts^
+!! linkedin !! ads and upsells and junk content
+linkedin.com/voyager/api/growth/suggestedRoutes^
+linkedin.com/voyager/api/feed/packageRecommendations^
+linkedin.com/voyager/api/feed/rightRailPromos^
+linkedin.com/voyager/api/growth/promotionTemplate^
+linkedin.com/voyager/api/voyagerPremiumDashUpsellSlotContent^
+!! watch while you are here
+linkedin.com/litms/api/metadata/user^
+linkedin.com/voyager/api/growth/pageContent/messaging_presence
+!! linkedin feed spam
+linkedin.com##div.feed-shared-update-v2:-abp-has(span:has-text(/add to your feed/i))
+linkedin.com##div.feed-shared-update-v2:-abp-has(span:has-text(/recommended for you/i))
+!! linkedin engagement bait "discovery"
+linkedin.com##ul:-abp-has(> li.discover-cohort-view--list-item)
 ! lame error/reload/engagement bait replacing junk
 linkedin.com##aside.mn-left-rail section.mn-error-state
 linkedin.com##footer[class*=__empty-state] button
@@ -208,8 +225,9 @@ linkedin.com##a[data-tracking-control-name="public_profile_see-all-posts"]
 linkedin.com##a[data-tracking-control-name="public_profile_badge"]
 ! banner call-to-action
 linkedin.com##section.bottom-cta-banner
-! search engagement bait
+! search engagement bait and suggestion nags
 linkedin.com##div[class*=view]:-abp-has(> div[class*=search-feedback])
+linkedin.com##li.typeahead-suggestion
 !!! 2020-09-09 redesign clutter
 ! rhs click bait
 linkedin.com##div.news-module
@@ -226,197 +244,6 @@ twitter.com##.trends.Trends.module
 twitter.com##div.wtf-module
 twitter.com##div.HomeEmptyTimeline
 twitter.com##div.RelatedUsers
-!
-!! Amazon
-!
-amazon.com##div#ah-dashboard
-amazon.com##div#fresh-shoveler
-amazon.com##div#gw-desktop-herotator
-amazon.com##div[class*=digital-dash-gateway]
-amazon.com##div.huc-first-upsell-row
-amazon.com##div#huc-v2-cobrand-stripe
-amazon.com##div.huc-last-upsell-rows
-amazon.com##div[id*=-upsell-]
-amazon.com##div.welcome-msg
-amazon.com##div[class*=student-overlay]
-amazon.com##div.pwOnboardingHintPopoverWrapper
-! socialification annoyances
-amazon.com##div.amazon-follow
-amazon.com##div.pr-fb-intro-tooltip
-amazon.com##div[id*=authorFollow]
-! Recommendations, History, Featured (RHF) is delayed -- block the HTML fetch
-amazon.com##div[class*=featured-asin]
-amazon.com##div[id*=recommend]
-amazon.com##div.rhf
-amazon.com##div.rhf-frame
-amazon.com##div#rhf-error
-amazon.com/gp/recent-history-footer/external/rhf-handler.html
-amazon.com##div#sc-rec-bottom
-amazon.com##div#sc-rec-right
-amazon.com##div#sc-new-upsell
-amazon.com##div#btfContent
-amazon.com##div.bestsellers
-amazon.com##div#sidebarbtf
-amazon.com##div[id*=_cust-recs]
-amazon.com##div#bia-hcb-widget
-amazon.com##div.desktop-row:has-text(/recommendations for/i)
-amazon.com##div.desktop-row:has-text(/recommended for/i)
-amazon.com##div.desktop-row:has-text(/a night in/i)
-amazon.com##div.desktop-row:has-text(/gift ideas/i)
-amazon.com##div.desktop-row:has-text(/with free/i)
-amazon.com##div[id*=featureAwareness]
-amazon.com##div#content div.a-section:has-text(/recommended for /i)
-amazon.com##div#content div.a-section:has-text(/recommendations/i)
-amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/recommended/i)
-amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/recommendations/i)
-amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/trending near/i)
-amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/popular near/i)
-amazon.com##div#centerSlots div.acswidget-carousel:has-text(/featured/i)
-amazon.com##div#fresh-storefront-container div#centerSlots div.a-row
-amazon.com##div.rcmBody
-amazon.com##div#centerSlots div.acsUxWidget
-amazon.com##div.fresh-shoveler
-amazon.com##div[id*=billboard]
-amazon.com##div[id*=editorial]
-amazon.com##div[id*=sidekick]
-amazon.com##div[id*=bia_]
-amazon.com##div.dealContainer
-amazon.com##div[id*=deals-]
-amazon.com##div[id*=nav-flyout-prime]
-amazon.com##div.nav-prime-tt
-amazon.com##ul[id*=recs-ysh]
-amazon.com##div[class*=ysh-]
-amazon.com##div.hud-dashboard-card-v2:has-text(/recommended for/i)
-amazon.com##div.deal-of-the-day
-! search clutter
-amazon.com##div#centerBelowExtraHowsMySearch
-amazon.com##div#hows-my-search
-amazon.com##div.nav-flyout-sidePanel
-amazon.com##div#osp-search
-! page ads and self promotion (incl. 3 ways of quick promotion)
-amazon.com##div#nav-upnav
-amazon.com##div#pdagEncapsulated
-amazon.com##div[id*=QuickPromo]
-amazon.com##div[id*=quick-promo]
-amazon.com##div[id*=quickPromo]
-amazon.com##div#detail-ilm_div
-amazon.com##div#universal-detail-ilm
-amazon.com##div#cbcc_banner
-amazon.com##div#giveaway_feature_div
-amazon.com##div.prime-ad-banner-content
-amazon.com##div#promoGrid
-amazon.com##div.featured:has-text(/sponsored/i)
-amazon.com##div.featured:has-text(/amazon giveaway/i)
-amazon.com##div.sc-java-remote-feature:has-text(/recommendation/i)
-amazon.com##div.reviews-content div.review:has-text(/vine voice/i)
-amazon.com##div#centerSlots div.kepler-carousel-title
-amazon.com##div#centerSlots table.kepler-vendorSponsored-table
-amazon.com##div#centerSlots div.a-row hr.a-divider-normal
-! feature/ads clutter, especially in the side bar
-amazon.com##div#SendSample
-amazon.com##div[id*=sponsoredProducts]
-amazon.com##div#sponsoredProducts2_feature_div
-amazon.com##div#ebooksGiveGift_feature_div
-amazon.com##div#rightCol div#redeemCode_feature_div
-amazon.com##div#tellAFriendBylineBox_feature_div
-amazon.com##div[id*=tellAFriendBox]
-amazon.com##div[id*=tell-a-]
-amazon.com##div#wishlistButtonStack
-amazon.com##div#kcpApp_feature_div
-amazon.com##div[id*=giveaway]
-amazon.com##div[id*=auto-sparkle-]
-amazon.com##div#detail-ilm_div
-amazon.com##div[id*=vse-related]
-amazon.com##div#marketing
-amazon.com##div#issuance-banner
-amazon.com##div.iss-ad-box
-amazon.com##div#ccxsmartshelf_secondaryPanelContent
-! feedback data mining clutter
-amazon.com##iframe#iFrameHMD
-amazon.com##div.bucket:has-text(/tell us about/i)
-amazon.com##div#hmdFormDiv
-amazon.com##div.small:has-text(/Feedback/i)
-amazon.com##span[data-component-type*=feedback]
-! nags
-amazon.com##div[class*=-overlay-container]
-amazon.com##a.kcpAppsPopOver
-amazon.com##div#FeatureAwarenessWidget
-! checkout hijacking / complete your cart diversions and ads
-amazon.com##div.fresh-merchandised-p13n-widget-carousel-container
-amazon.com##div#body-features table.kepler-vendorSponsored-table
-amazon.com##div#body-features div.a-row hr.a-size-large
-! shop by look junk
-amazon.com##li.acs-private-brands-container-background
-amazon.com##div[id*=shopbylook]
-amazon.com##div[class*=shopbylook]
-amazon.com##div[class*="p13n-sc"]
-ssl-images-amazon.com/*/transparent-pixel*
-amazon.com##div.purchasedAsin:-abp-has(div[class*="replaced-asin"])
-amazon.com##div.a-section:-abp-has(span[id*=ad-feedback])
-amazon.com##div.s-search-results > div:-abp-has(span[cel_widget_id="SEARCH_RESULTS-SHOPPING_ADVISER"])
-amazon.com##div#sp_detail_thematic
-!! "themed" banner suggestions
-amazon.com##div#percolate-ui-ilm_div
-amazon.com##div.nav-signin-tt
-!! nags and upsell interruption of checking
-amazon.com##div[id*="-p13n-"]
-amazon.com##div[id*="before-you-go"]
-amazon.com##div.kepler-carousel-container:-abp-has(div.kepler-carousel-title span:has-text(/add.*your cart/i))
-amazon.com##div.kepler-carousel-container:-abp-has(div.kepler-carousel-title span:has-text(/coupon/i))
-!! trick you into installing browser extension that snoops on you everwhere
-amazon.com##div[class*=aa-install]
-!! ads on order details
-amazon.com##div[cel_widget_id*="desktop-yo-orderdetails_"]
-!! recommendation widget ??
-amazon.com##div.recsWidgetContainer
-!! upsells, self-promotion and ads on the page
-amazon.com##div.gw-card-layout div.video-player
-amazon.com##div.gw-card-layout div.celwidget:has-text(/learn more/i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/see more/i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/explore more/i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/shop /i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/now available/i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/browse now/i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/start watching/i)
-amazon.com##div.gw-card-layout div.celwidget:has-text(/watch.* now/i)
-# upsell widget
-amazon.com##div[data-cel-widget*=upsell]
-amazon.com##div[cel_widget_id*=upsell]
-# app nags
-amazon.com##span[id*=app-prompt]
-!! ads for other items (cerberus)
-amazon.com##div#cerberus_feature_div
-!! ads disguised as "advisor"
-amazon.com##div:-abp-has(> span[cel_widget_id*="SHOPPING_ADVISER"])
-!! "related" searches
-amazon.com##span[class*=related-searches]
-!! video spam
-amazon.com##div.s-result-item:-abp-has(span.sbv-video-single-product)
-!! email tracking
-amazon.com/gp/r.html
-! amazon session snooping
-||fls-na.amazon.com/1/batch/1/*$image
-||unagi-na.amazon.com
-||amazon.com/*uedata
-||amazon.com/gp/uedata*
-||amazon.com/gp/redirection/*
-!
-!! Crunchbase
-!
-crunchbase.com##[class*=upsell]
-crunchbase.com##[id*=lock]
-crunchbase.com/*/captcha.js
-crunchbase.com/rw7M6iAV/captcha/PXrw7M6iAV/captcha.js
-crunchbase.com/*/captcha/
-crunchbase.com/*/api/*/collector
-crunchbase.com/*/api/*/captcha
-crunchbase.com/*/init.js
-!! crunchbase
-crunchbase.com##overview-pro-upsell
-crunchbase.com##floating-help-button
-!! crunchbase.com##div.cdk-overlay-container   !! leads to locked page
-crunchbase.com##div.cdk-live-announcer-element
-crunchbase.com##native-ad
 !
 !! Github
 !
@@ -471,7 +298,11 @@ trello.com##span[name="business-class"]
 trello.com##div:-abp-has(> button > div > span[name="business-class"])
 ! less from atlassian please
 trello.com##button[data-test-id=atlassian-app-switcher]
-
+! snooping and tracking
+api-gateway.trello.com/gateway/api/gasv*/api/*/batch
+! annoucement and nags
+trello.com/announcements
+trello.com/1/member/me
 !
 !! Meetup
 !
@@ -486,6 +317,7 @@ meetup.com##div.gtm-motivation-cards
 meetup.com##div.gtm-seeded-events
 meetup.com##div.relatedEvents
 meetup.com##div.notifications--populated > ul.list > li:-abp-has(a[href*=group_announce])
+meetup.com##div[class*=create-group-cta]
 !
 !! Spirit
 !
@@ -506,8 +338,36 @@ mapmyrun.com##a:has-text(/ premium/i)
 !
 !! strava
 !
+strava.com##div.promo
 strava.com##div.footer-upsell
 strava.com##div#stravaCookieBanner
+!
+!! home depot
+!
+homedepot.com##div[name*=recommendations]
+homedepot.com##div[name*=sponsored]
+homedepot.com##div[id*=sponsored]
+homedepot.com##div[name*="seo-"]
+homedepot.com##div[name*="recently-"]
+homedepot.com##footer > nav:-abp-has(li.footer__brand)
+homedepot.com##div[class*="CreditOffer"]
+!
+!! retailmenot
+!
+retailmenot.com##div[class*=PromoSticky]
+retailmenot.com##div[class*=ModalDealFinderCallOut]
+retailmenot.com##div[class*=MerchantRatingWrapper]
+retailmenot.com##div[class*=FaqLink]
+retailmenot.com##div[class*=DealFinderInline]
+retailmenot.com##div[class*=SubmitCouponWrapper]
+retailmenot.com##div[class*=NotificationContainer]
+retailmenot.com##div:-abp-has(> h2:has-text(/Similar Stores/i))
+retailmenot.com##div:-abp-has(> h2:has-text(/Expired Coupons/i))
+retailmenot.com##button.join-button:has-text(/firefox/i)
+retailmenot.com##button.join-button:has-text(/chrome/i)
+retailmenot.com##button.join-button:has-text(/safari/i)
+retailmenot.com##div[class*=NewsletterContainer]
+retailmenot.com##span:-abp-has(> div > div > div:has-text(/popular stores/i))
 !
 !! Racewire
 !
@@ -551,12 +411,18 @@ connect.garmin.com##li.main-nav-item:has-text(/insights/i)
 connect.garmin.com##li.main-nav-item:has-text(/badges/i)
 connect.garmin.com##div.note-container
 connect.garmin.com##div.comment-container
+! garmin / trail tracking
+garmin.com##div#inreach-right-ad-container
+garmin.com##img.map-share-plug
 !
 !! imgur
 !
 imgur.com##div#side-gallery
 imgur.com##div.side-footer-links
 imgur.com##div.post-header
+imgur.com##div.BottomRecirc
+imgur.com##div.Gallery-Sidebar
+imgur.com##div.Gallery-EngagementBar
 !
 !! Quora
 !
@@ -577,27 +443,6 @@ news.ycombinator.com##tr.athing:if-not(td.votelinks)
 ! match table row subtext without points
 news.ycombinator.com##table.itemlist tr:has(td.subtext):if-not(td:has-text(/ points /))
 !
-!! Zillow
-!
-zillow.com##div[id*=seller-lead-contact]
-zillow.com##article#contact-tall
-zillow.com##article#contact-wide
-zillow.com##li#contact-menu
-! non-owner-occupied
-zillow.com##div[class*=noo-module]
-! upsells
-zillow.com##div[id*=-upsell]
-zillow.com##section#home-details-mortgage-module
-zillow.com##div.payment-calculator
-zillow.com##li:has(span[data-test-id=share-hdp-button])
-zillow.com##div.hdp-owner-view-upsell-listing-strength
-!! zillow ads in list of sold homes
-zillow.com##div[id*=nav-ad]
-zillow.com##div[class*=nav-ad]
-!! tracking
-||e.zg-api.com/metrics/
-||zg-api.com/metrics/
-!
 !! duckduckgo
 !
 duckduckgo.com##div[class*=feedback]
@@ -605,9 +450,19 @@ duckduckgo.com##div.showcase
 duckduckgo.com##div.social
 duckduckgo.com##div.footer
 !
+!! etsy
+!
+etsy.com/api/v3/ajax/bespoke/member/neu/specs/*_async_recs*
+etsy.com/api/v3/ajax/public/shop-analytics/*
+!
 !! Ebay
 !
 ebay.com##li.s-item:has-text(/sponsored/i)
+ebay.com##section:-abp-has(div.merch-carousel__header > div.merch-carousel__title > a.feedbackLink)
+ebay.com##section.merch-module:-abp-has(> div.loading-state)
+ebay.com##div.seo-interlink
+ebay.com##div[class*=cobranded-card]
+ebay.com##div[class*=vi-notify]
 !
 !! Hotels.com
 !
@@ -630,178 +485,10 @@ indeed.com##div#jobalertswrapper
 indeed.com##div#femp_list
 indeed.com##td#resultsCol div.row.clickcard[data-advn]
 !
-!! Fidelity
+!! Yahoo
 !
-fidelity.com##div.help-bubble--wrapper
-fidelity.com##div.help-bubble
-fidelity.com##ul.offer-submenu
-fidelity.com##div#onsitemessage
-fidelity.com##div.legal-footer--below-content
-fidelity.com##div.legal-footer--item-content
-fidelity.com##div#va-open-button
-!! fidelity
-fidelity.com##va-assistant
-fidelity.com##va-assistant-app
-fidelity.com##div.va-chat
-! promotional
-fidelity.com##div.value-proposition
-! useless messages and "cards"
-fidelity.com##div#message00informational00EMSG
-fidelity.com##div.card-layout--card-content:-abp-has(div.syndicated-promo)
-fidelity.com##div.card-layout--card-content:-abp-has(div.news-card-container)
-fidelity.com##div.card-layout--card-content:-abp-has(div.top-movers-card-container)
-fidelity.com##div.card-layout--card-content:-abp-has(div.oppfin-sc-card-container)
-fidelity.com##div.card-layout--card-content:-abp-has(div.market-mover-card-container)
-fidelity.com##div.card-layout--card-content:-abp-has(div.market-chart-card-container)
-!
-!! Forbes
-!
-forbes.com##div.vestpocket
-!
-!! bloomberg
-!
-bloomberg.com/*/captcha
-bloomberg.com/*/captcha.js
-bloomberg.com/*/init.js
-!
-!! cnbc
-!
-cnbc.com##div.bxc
-!! CNBC ads pretending to be content
-cnbc.com##div[class*=Card-container]:-abp-has(a[href*="/select/"])
-cnbc.com##div[id*=CNBCSelect]
-cnbc.com##section:-abp-has(a[href*="/select/"])
-cnbc.com##li:-abp-has(a[href*="/select/"])
-! cnbc click bait
-cnbc.com##div[id*=TrendingNow]
-cnbc.com##div[id*=CNBCEvents]
-! nag you to email
-cnbc.com##div.Footer-info
-! upsell
-cnbc.com##div[class*=Card]:-abp-has(span.icon-probug)
-!
-!! Yahoo Finance
-!
-finance.yahoo.com##div#mrt-node-Lead-1-FeatureBar
-finance.yahoo.com##div[data-test=fin-tradeit-container]
-finance.yahoo.com##a#uh-mail
-finance.yahoo.com##div[id*=ComboAd-]
-finance.yahoo.com##div[id*=-LinkOut]
-finance.yahoo.com##div[data-test=quote-mdl] > a[href*=utm_campaign]
-finance.yahoo.com##div[id*=FeatureBar]
-finance.yahoo.com##div[id*=QuoteVideo]
-finance.yahoo.com##a.comment-btn-link
-finance.yahoo.com##button[aria-label*="to like"]
-finance.yahoo.com##button[aria-label*="Share Menu"]
-finance.yahoo.com##div[id*=ContentIFrame]
-finance.yahoo.com##div[id*=CanvassComments]
-! autoplay video and tracking
-||csp.yahoo.com/beacon^
-||csp.yahoo.com|
-s.yimg.com/*streamsense*
-finance.yahoo.com/*streamer-worker*.js
-||edgecast-livedax.yahoo.net^
-||finance.yahoo.com/_finance_doubledown^
-.vpg.cdn.yimg.com^
-||streamerapi.finance.yahoo.com^
-! crammed broker ads
-finance.yahoo.com##div.broker-buttons
-yahoo.com##.adsbygoogle
-!
-!! yahoo fantasy sports
-!
-yahoo.com##div.Nav-fantasy div.Pbot-lg div.Section:has-text(/Daily Fantasy/i)
-yahoo.com##div.Nav-fantasy div.Pstart-30:has-text(/Other fantasy/i)
-yahoo.com##section#fantasyshop
-yahoo.com##section#celebrity_promo_league
-yahoo.com##section#livedraft-join-mod
-yahoo.com##section#fantasytrophypromo
-yahoo.com##section[id*=promo]
-yahoo.com##section#whatsnew
-yahoo.com##div#ysf-medal-notifications
-yahoo.com##div.ysf-medal
-yahoo.com##section#team-medals
-yahoo.com##img[src*=promo]
-yahoo.com##img[src*=gamead]
-yahoo.com##div.yui3-overlay-mask
-yahoo.com##div.yui3-overlay-modal
-yahoo.com##a.yfa-rapid-beacon
-yahoo.com##div[class*=surveymonkey]
-yahoo.com##section#rollover
-yahoo.com##div.fantasy-life-card
-yahoo.com##div#ffl-banner
-sports.yahoo.com##a#uh-mail
-yahoo.com##div.YDC-Lead
-yahoo.com##div.ys-teams-nav
-# hero banner nag
-yahoo.com##div#yspcontenthero
-yimg.com/cv/api/fantasy/nfl/*left*@*x.$image
-yimg.com/cv/api/fantasy/nfl/*right*@*x.$image
-yimg.com/cv/api/fantasy/nfl/*top*@*x.$image
-! yahoo nav junk
-yahoo.com##li#uh-tb-tumblrfooter-rms-ads-container ng-scope
-yahoo.com##li#uh-tb-news
-yahoo.com##li#uh-tb-sports
-yahoo.com##li#uh-tb-entertainment
-yahoo.com##li#uh-tb-finance
-yahoo.com##li#uh-tb-lifestyle
-yahoo.com##li#uh-tb-answers
-yahoo.com##li#uh-tb-groups
-yahoo.com##li#uh-tb-mobile
-yahoo.com##li#uh-tb-more
-yahoo.com##li[id*=promo]
-yahoo.com##section[id*=promo]
-yahoo.com##div[id*=FeatureBar]
-yahoo.com##a[title=Tickets]
-yahoo.com##a[title=Shop NFL Gear]
-yahoo.com##div#nr-secondtier-nav-main div[data-dropdown-key=more-items]
-!! yahoo general
-yahoo.com##div.nr-applet-moreNav
-! flyout nav annoyances
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NBA])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=MLB])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NCAAF])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Soccer])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Golf])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NCAAB])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=MMA])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="World Cup"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NHL])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Boxing])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NASCAR])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Tennis])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NCAAW])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Olympics])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Indycar])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Horse Racing"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Cycling"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Odds"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="WNBA"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Videos"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Podcasts"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Rivals"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Shop"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Help"])
-yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Jobs"])
-! don't give yahoo personal info
-yahoo.com##a.ys-personalize-link
-! yahoo fantasy
-sports.yahoo.com##div[id*="FantasySlatePromo"]
-sports.yahoo.com##div[id*="PromoImage"]
-sports.yahoo.com##div.ys-interstitial-container
-sports.yahoo.com##div[id*=Interstitial]
-sports.yahoo.com##div[id*=Seatgeek]
-fantasysports.yahoo.com##div[class*="pill-promo"]
-fantasysports.yahoo.com##div#cashchallenges
-fantasysports.yahoo.com##section#teamnotes div[data-target*="profiles.sports.yahoo.com"]
-!
-!! cbssports
-!
-cbssports.com##div[id*=promo]
-cbssports.com##aside[class*="-seo"]
-cbssports.com##div.LiveBlogStreamContainer
-cbssports.com##div.site-footer-partners
-cbssports.com##section.Newsletter-container
+!! yahoo error snooping
+yahoo.com/site/jserror/*
 !
 !! Mozilla
 !
@@ -834,6 +521,15 @@ glassdoor.com##div[class*=PromoModule]
 glassdoor.com##div.trustNotice
 glassdoor.com##div.exploreCareers.sticky
 glassdoor.com##li.saved-jobs
+! glassdoor ads and tracking
+glassdoor.com/*/js/gd-sentry*
+glassdoor.com/*/*ads-init*
+glassdoor.com/*/pageViewTrackExternal*
+glassdoor.com/*/gd-content-wall*
+glassdoor.com/graph*
+glassdoor.com/getSiteNotificationsAjax*
+glassdoor.com/*/gd-job-alert*
+glassdoor.com/*/getSavedJobsCount*
 !
 !! Yelp
 !
@@ -859,34 +555,6 @@ opentable.com##div#search_results_pop
 youtube.com##div[class*=ytp-ce-]
 youtube.com##paper-dialog.ytd-popup-container
 !
-!! Fantasy Pros
-!
-fantasypros.com##div.slideout-promo
-fantasypros.com##div[class*=promo]
-! fantasypros
-fantasypros.com##section.deposit-offer
-fantasypros.com/css/top_banner.css
-fantasypros.com##div#top-banner
-fantasypros.com##div#customScoringModal.upgrade-modal
-fantasypros.com##div.modal-backdrop.in
-||cdn.fantasypros.com/realtime/media_trust.js
-! overlay nag for switching to redesign
-fantasypros.com##section#ecr-opt-in
-fantasypros.com##div.pcast-wrap
-!
-!! oddsshark
-!
-oddsshark.com##div#highlighted
-!
-!! actionnetwork
-!
-actionnetwork.com##[class*="affiliates-sidebar"]
-actionnetwork.com##[class*="odds-explainer"]
-actionnetwork.com##[class*="odds-tools"]
-actionnetwork.com##footer
-actionnetwork.com##div[class*=marketing-modal]
-actionnetwork.com##aside.best-odds__right-rail
-!
 !! General Assembly
 !
 generalassemb.ly##div.reveal-modal
@@ -905,26 +573,6 @@ urbandictionary.com##div#urban-top-bar
 urbandictionary.com##div.def-footer
 urbandictionary.com##div.thumbs
 urbandictionary.com##i.svgicon
-!
-!! Chase
-!
-! ads & upsells
-chase.com##div.mktuiAds
-chase.com##div[class*="-ad"]
-chase.com##div[class*="mktuiOffer"]
-chase.com##div.credit-journey
-chase.com##div.ad
-!
-!! citi
-!
-! upsells and ads
-citi.com##linked-offer
-citi.com##offer-details
-!
-!! bankrate
-!
-bankrate.com##div[data-test=no-offer-box]
-bankrate.com##div.exit-intent-modal
 !
 !! uberconference
 !
@@ -956,3 +604,9 @@ scribd.com##div[id*=DidYouKnow]
 scribd.com##li[id*=membership_info]
 scribd.com##div[class*=promo]
 scribd.com##div.share_document_wrapper
+!
+!! camelcamelcamel
+!
+camelcamelcamel.com/product/.*/go
+camelcamelcamel.com##a.button.buy
+camelcamelcamel.com##a.offers
