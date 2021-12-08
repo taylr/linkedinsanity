@@ -1,0 +1,178 @@
+[Adblock Plus 2.0]
+! Version: 202112081539
+! Checksum: +IDhBR8rN4vqXRoXNRtdAA
+! Title: Good Sports Annoyance Rules (uBlock Origin)
+! Last modified: 08 December 2021 15:39 UTC
+! Expires: 7 days (update frequency)
+! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/good-sports.txt
+! Licence: MIT License
+!--------------------------------------------------------------------!
+!
+!! yahoo fantasy sports
+!
+yahoo.com##div.Nav-fantasy div.Pbot-lg div.Section:has-text(/Daily Fantasy/i)
+yahoo.com##div.Nav-fantasy div.Pstart-30:has-text(/Other fantasy/i)
+yahoo.com##section#fantasyshop
+yahoo.com##section#celebrity_promo_league
+yahoo.com##section#livedraft-join-mod
+yahoo.com##section#fantasytrophypromo
+yahoo.com##section[id*=promo]
+yahoo.com##section#whatsnew
+yahoo.com##div#ysf-medal-notifications
+yahoo.com##div.ysf-medal
+yahoo.com##section#team-medals
+yahoo.com##img[src*=promo]
+yahoo.com##img[src*=gamead]
+yahoo.com##div.yui3-overlay-mask
+yahoo.com##div.yui3-overlay-modal
+yahoo.com##a.yfa-rapid-beacon
+yahoo.com##div[class*=surveymonkey]
+yahoo.com##section#rollover
+yahoo.com##div.fantasy-life-card
+yahoo.com##div#ffl-banner
+sports.yahoo.com##a#uh-mail
+yahoo.com##div.YDC-Lead
+yahoo.com##div.ys-teams-nav
+# hero banner nag
+yahoo.com##div#yspcontenthero
+yimg.com/cv/api/fantasy/nfl/*left*@*x.$image
+yimg.com/cv/api/fantasy/nfl/*right*@*x.$image
+yimg.com/cv/api/fantasy/nfl/*top*@*x.$image
+! yahoo nav junk
+yahoo.com##li#uh-tb-tumblrfooter-rms-ads-container ng-scope
+yahoo.com##li#uh-tb-news
+yahoo.com##li#uh-tb-sports
+yahoo.com##li#uh-tb-entertainment
+yahoo.com##li#uh-tb-finance
+yahoo.com##li#uh-tb-lifestyle
+yahoo.com##li#uh-tb-answers
+yahoo.com##li#uh-tb-groups
+yahoo.com##li#uh-tb-mobile
+yahoo.com##li#uh-tb-more
+yahoo.com##li[id*=promo]
+yahoo.com##section[id*=promo]
+yahoo.com##div[id*=FeatureBar]
+yahoo.com##a[title=Tickets]
+yahoo.com##a[title=Shop NFL Gear]
+yahoo.com##div#nr-secondtier-nav-main div[data-dropdown-key=more-items]
+!! yahoo general
+yahoo.com##div.nr-applet-moreNav
+! flyout nav annoyances
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NBA])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=MLB])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NCAAF])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Soccer])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Golf])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NCAAB])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=MMA])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="World Cup"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NHL])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Boxing])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NASCAR])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Tennis])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=NCAAW])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Olympics])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title=Indycar])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Horse Racing"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Cycling"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Odds"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="WNBA"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Videos"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Podcasts"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Rivals"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Shop"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Help"])
+yahoo.com##li.nr-applet-main-nav-item:-abp-has(a[title="Jobs"])
+! don't give yahoo personal info
+yahoo.com##a.ys-personalize-link
+! yahoo fantasy
+sports.yahoo.com##div[id*="FantasySlatePromo"]
+sports.yahoo.com##div[id*="PromoImage"]
+sports.yahoo.com##div.ys-interstitial-container
+sports.yahoo.com##div[id*=Interstitial]
+sports.yahoo.com##div[id*=Seatgeek]
+fantasysports.yahoo.com##div[class*="pill-promo"]
+fantasysports.yahoo.com##div#cashchallenges
+fantasysports.yahoo.com##section#teamnotes div[data-target*="profiles.sports.yahoo.com"]
+!
+fantasysports.yahoo.com##div#hybrid_entry_point
+fantasysports.yahoo.com##div.Tst-smart-ad
+fantasysports.yahoo.com##div#yspmh
+fantasysports.yahoo.com##div#trade_acquire_player_insights
+fantasysports.yahoo.com##div#trade_away_player_insights
+fantasysports.yahoo.com##header > div div:-abp-has(> div:has-text(/Presented By/i))
+fantasysports.yahoo.com##div#fantasy-matchup-banner
+!! useless search bar
+fantasysports.yahoo.com##div#ybar-search-box-container
+!! daily fantasy ads / images
+s.yimg.com/cv/apiv2/fantasy/daily/*
+fantasysports.yahoo.com##div.Bdr-radius:-abp-has(> div > div:has-text(/Daily Fantasy/i))
+!! sidebar ads
+fantasysports.yahoo.com##section#biggest-blowout-mini > footer
+!! "experts"
+fantasysports.yahoo.com##section#home-fantasy-experts
+!! recap junk
+fantasysports.yahoo.com##section#biggest-blowout-mini a[href*="recap"]
+fantasysports.yahoo.com##section#biggest-blowout-mini a[href*="biggest_blowout"]
+!
+!! cbssports
+!
+cbssports.com##div[id*=promo]
+cbssports.com##aside[class*="-seo"]
+cbssports.com##div.LiveBlogStreamContainer
+cbssports.com##div.site-footer-partners
+cbssports.com##section.Newsletter-container
+!
+!! Fantasy Pros
+!
+fantasypros.com##div.slideout-promo
+fantasypros.com##div[class*=promo]
+! fantasypros
+fantasypros.com##section.deposit-offer
+fantasypros.com/css/top_banner.css
+fantasypros.com##div#top-banner
+fantasypros.com##div#customScoringModal.upgrade-modal
+fantasypros.com##div.modal-backdrop.in
+||cdn.fantasypros.com/realtime/media_trust.js
+! overlay nag for switching to redesign
+fantasypros.com##section#ecr-opt-in
+fantasypros.com##div.pcast-wrap
+fantasypros.com##div.pcast-hide-close
+fantasypros.com##section[class*=product-updates]
+fantasypros.com##span[class*="player-prop-bet"]
+fantasypros.com##section[class*=premium-offers]
+fantasypros.com##section[class*=feature-highlight]
+fantasypros.com##strong:has-text(/sponsor|use code/i)
+fantasypros.com##b:has-text(/pristine matchup/i)
+fantasypros.com##i:has-text(/pristine auction/i)
+fantasypros.com##a[href*='pristine']
+!
+!! espn
+!
+! espn / fantasy analytics snooping
+espncdn.com/*/espn-analytics.js
+a.espncdn.com/redesign/0.564.0/js/espn-analytics.js
+!
+!! oddsshark
+!
+oddsshark.com##div#highlighted
+!
+!! actionnetwork
+!
+actionnetwork.com##[class*="affiliates-sidebar"]
+actionnetwork.com##[class*="odds-explainer"]
+actionnetwork.com##[class*="odds-tools"]
+actionnetwork.com##footer
+actionnetwork.com##div[class*=marketing-modal]
+actionnetwork.com##aside.best-odds__right-rail
+!
+!! numberfire
+!
+numberfire.com##div.blackout
+numberfire.com##div.numberFire-login
+numberfire.com##div.numberFire-signup
+numberfire.com##div.signup-interstitial
+! numberfire.com##div#react-scoreboard
+numberfire.com##li.premium
+! numberfire.com##div.draftkit-myteam-modal--icon
+numberfire.com/socket.io
