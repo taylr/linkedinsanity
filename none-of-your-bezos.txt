@@ -1,0 +1,213 @@
+[Adblock Plus 2.0]
+! Version: 202112081539
+! Checksum: pCGtOTuP2sOSFZmOB9vMOA
+! Title: None of Your Bezos Annoyance Rules (uBlock Origin)
+! Last modified: 08 December 2021 15:39 UTC
+! Expires: 7 days (update frequency)
+! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/none-of-your-bezos.txt
+! Licence: MIT License
+!--------------------------------------------------------------------!
+!
+!! Amazon
+!
+amazon.com##div#ah-dashboard
+amazon.com##div#fresh-shoveler
+amazon.com##div#gw-desktop-herotator
+amazon.com##div[class*=digital-dash-gateway]
+amazon.com##div.huc-first-upsell-row
+amazon.com##div#huc-v2-cobrand-stripe
+amazon.com##div.huc-last-upsell-rows
+amazon.com##div[id*=-upsell-]
+amazon.com##div.welcome-msg
+amazon.com##div[class*=student-overlay]
+amazon.com##div.pwOnboardingHintPopoverWrapper
+! socialification annoyances
+amazon.com##div.amazon-follow
+amazon.com##div.pr-fb-intro-tooltip
+amazon.com##div[id*=authorFollow]
+! Recommendations, History, Featured (RHF) is delayed -- block the HTML fetch
+amazon.com##div[class*=featured-asin]
+amazon.com##div[id*=recommend]
+amazon.com##div.rhf
+amazon.com##div.rhf-frame
+amazon.com##div#rhf-error
+amazon.com/gp/recent-history-footer/external/rhf-handler.html
+amazon.com##div#sc-rec-bottom
+amazon.com##div#sc-rec-right
+amazon.com##div#sc-new-upsell
+amazon.com##div#btfContent
+amazon.com##div.bestsellers
+amazon.com##div#sidebarbtf
+amazon.com##div[id*=_cust-recs]
+amazon.com##div#bia-hcb-widget
+amazon.com##div.desktop-row:has-text(/recommendations for/i)
+amazon.com##div.desktop-row:has-text(/recommended for/i)
+amazon.com##div.desktop-row:has-text(/a night in/i)
+amazon.com##div.desktop-row:has-text(/gift ideas/i)
+amazon.com##div.desktop-row:has-text(/with free/i)
+amazon.com##div[id*=featureAwareness]
+amazon.com##div#content div.a-section:has-text(/recommended for /i)
+amazon.com##div#content div.a-section:has-text(/recommendations/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/recommended/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/recommendations/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/trending near/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row:has-text(/popular near/i)
+amazon.com##div#centerSlots div.acswidget-carousel:has-text(/featured/i)
+amazon.com##div#fresh-storefront-container div#centerSlots div.a-row
+amazon.com##div.rcmBody
+amazon.com##div#centerSlots div.acsUxWidget
+amazon.com##div.fresh-shoveler
+amazon.com##div[id*=billboard]
+amazon.com##div[id*=editorial]
+amazon.com##div[id*=sidekick]
+amazon.com##div[id*=bia_]
+amazon.com##div.dealContainer
+amazon.com##div[id*=deals-]
+amazon.com##div[id*=nav-flyout-prime]
+amazon.com##div.nav-prime-tt
+amazon.com##ul[id*=recs-ysh]
+amazon.com##div[class*=ysh-]
+amazon.com##div.hud-dashboard-card-v2:has-text(/recommended for/i)
+amazon.com##div.deal-of-the-day
+! search clutter
+amazon.com##div#centerBelowExtraHowsMySearch
+amazon.com##div#hows-my-search
+amazon.com##div.nav-flyout-sidePanel
+amazon.com##div#osp-search
+! page ads and self promotion (incl. 3 ways of quick promotion)
+amazon.com##div#nav-upnav
+amazon.com##div#pdagEncapsulated
+amazon.com##div[id*=QuickPromo]
+amazon.com##div[id*=quick-promo]
+amazon.com##div[id*=quickPromo]
+amazon.com##div#detail-ilm_div
+amazon.com##div#universal-detail-ilm
+amazon.com##div#cbcc_banner
+amazon.com##div#giveaway_feature_div
+amazon.com##div.prime-ad-banner-content
+amazon.com##div#promoGrid
+amazon.com##div.featured:has-text(/sponsored/i)
+amazon.com##div.featured:has-text(/amazon giveaway/i)
+amazon.com##div.sc-java-remote-feature:has-text(/recommendation/i)
+amazon.com##div.reviews-content div.review:has-text(/vine voice/i)
+amazon.com##div#centerSlots div.kepler-carousel-title
+amazon.com##div#centerSlots table.kepler-vendorSponsored-table
+amazon.com##div#centerSlots div.a-row hr.a-divider-normal
+! feature/ads clutter, especially in the side bar
+amazon.com##div#SendSample
+amazon.com##div[id*=sponsoredProducts]
+amazon.com##div#sponsoredProducts2_feature_div
+amazon.com##div#ebooksGiveGift_feature_div
+amazon.com##div#rightCol div#redeemCode_feature_div
+amazon.com##div#tellAFriendBylineBox_feature_div
+amazon.com##div[id*=tellAFriendBox]
+amazon.com##div[id*=tell-a-]
+amazon.com##div#wishlistButtonStack
+amazon.com##div#kcpApp_feature_div
+amazon.com##div[id*=giveaway]
+amazon.com##div[id*=auto-sparkle-]
+amazon.com##div#detail-ilm_div
+amazon.com##div[id*=vse-related]
+amazon.com##div#marketing
+amazon.com##div#issuance-banner
+amazon.com##div.iss-ad-box
+amazon.com##div#ccxsmartshelf_secondaryPanelContent
+! feedback data mining clutter
+amazon.com##iframe#iFrameHMD
+amazon.com##div.bucket:has-text(/tell us about/i)
+amazon.com##div#hmdFormDiv
+amazon.com##div.small:has-text(/Feedback/i)
+amazon.com##span[data-component-type*=feedback]
+! nags
+amazon.com##div[class*=-overlay-container]
+amazon.com##a.kcpAppsPopOver
+amazon.com##div#FeatureAwarenessWidget
+! checkout hijacking / complete your cart diversions and ads
+amazon.com##div.fresh-merchandised-p13n-widget-carousel-container
+amazon.com##div#body-features table.kepler-vendorSponsored-table
+amazon.com##div#body-features div.a-row hr.a-size-large
+! shop by look junk
+amazon.com##li.acs-private-brands-container-background
+amazon.com##div[id*=shopbylook]
+amazon.com##div[class*=shopbylook]
+amazon.com##div[class*="p13n-sc"]
+ssl-images-amazon.com/*/transparent-pixel*
+amazon.com##div.purchasedAsin:-abp-has(div[class*="replaced-asin"])
+amazon.com##div.a-section:-abp-has(span[id*=ad-feedback])
+amazon.com##div.s-search-results > div:-abp-has(span[cel_widget_id="SEARCH_RESULTS-SHOPPING_ADVISER"])
+amazon.com##div#sp_detail_thematic
+!! "themed" banner suggestions
+amazon.com##div#percolate-ui-ilm_div
+amazon.com##div.nav-signin-tt
+!! nags and upsell interruption of checking
+amazon.com##div[id*="-p13n-"]
+amazon.com##div[id*="before-you-go"]
+amazon.com##div.kepler-carousel-container:-abp-has(div.kepler-carousel-title span:has-text(/add.*your cart/i))
+amazon.com##div.kepler-carousel-container:-abp-has(div.kepler-carousel-title span:has-text(/coupon/i))
+!! trick you into installing browser extension that snoops on you everwhere
+amazon.com##div[class*=aa-install]
+!! ads on order details
+amazon.com##div[cel_widget_id*="desktop-yo-orderdetails_"]
+!! recommendation widget ??
+amazon.com##div.recsWidgetContainer
+!! upsells, self-promotion and ads on the page
+amazon.com##div.gw-card-layout div.video-player
+amazon.com##div.gw-card-layout div.celwidget:has-text(/learn more/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/see more/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/explore more/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/shop /i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/now available/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/browse now/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/start watching/i)
+amazon.com##div.gw-card-layout div.celwidget:has-text(/watch.* now/i)
+# upsell widget
+amazon.com##div[data-cel-widget*=upsell]
+amazon.com##div[cel_widget_id*=upsell]
+# app nags
+amazon.com##span[id*=app-prompt]
+!! ads for other items (cerberus)
+amazon.com##div#cerberus_feature_div
+!! ads disguised as "advisor"
+amazon.com##div:-abp-has(> span[cel_widget_id*="SHOPPING_ADVISER"])
+!! "related" searches
+amazon.com##span[class*=related-searches]
+!! video spam
+amazon.com##div.s-result-item:-abp-has(span.sbv-video-single-product)
+!! email tracking
+amazon.com/gp/r.html
+! amazon session snooping
+||fls-na.amazon.com/1/batch/1/*$image
+||unagi-na.amazon.com
+||amazon.com/*uedata
+||amazon.com/gp/uedata*
+||amazon.com/gp/redirection/*
+!! annoying nav flyout on RHS with cart
+amazon.com##div#nav-flyout-ewc
+amazon.com##div#live-flagship-root
+amazon.com##div#attach-accessories
+!! search result spam
+amazon.com##div.s-result-item:-abp-has(span[class*="RELATED_POSTS"])
+!! feedback / survey / reviews
+amazon.com##div[id*=survey]
+amazon.*##div.customer-feedback-widget
+amazon.*##span.cr-age-recommendation
+amazon.*##span.cr-solicitation
+amazon.*##div.askQuestionExamples
+!! video nags
+amazon.*##div#vseVideoWidget_cardDeck
+!! excessive ads and motion
+amazon.*##span[cel_widget_id*="FEATURE_CARD"]
+amazon.*##div#localMarketRecommendations
+!! excessive footer
+amazon.*##table.navFooterMoreOnAmazon
+!! data collection bait
+amazon.com##div[class*=mom-nudge]
+!! upsell bundle
+amazon.com##div[id*=bundle_feature]
+amazon.*##span[data-action="bia_button"]
+amazon.*##div[cel_widget_id*="buy-again-carousel"]
+!! click tracking redirect
+amazon.com/gp/r.html
+amazon.*/gp/r.html
+!! recommendations / ads
+amazon.*##div[cel_widget_id*=p13n-desktop-ysh_YourStoreHome]
