@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 202112081539
-! Checksum: dEqtmpABLEEyC7uNCWuUAA
+! Version: 202211182020
+! Checksum: N1zK9qVt7Yu3etts6g1unw
 ! Title: Linked Insanity Annoyance Rules (uBlock Origin)
-! Last modified: 08 December 2021 15:39 UTC
+! Last modified: 18 November 2022 20:20 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt
 ! Licence: MIT License
@@ -154,6 +154,7 @@ linkedin.com##div#artdeco-global-alert-container
 linkedin.com##artdeco-tooltip-content
 linkedin.com##div#artdeco-hoverable-outlet
 linkedin.com##div#artdeco-toasts__wormhole
+linkedin.com##div[class*=search-explicit-feedback]
 ! nag/fish for personal info
 linkedin.com##section[class*="gp-promo-"]
 linkedin.com##ul[class*="-promo_"]
@@ -293,6 +294,7 @@ trello.com##li[class*=menu-navigation] div[class*=board-menu-prompt]
 trello.com##div[class*=ads-layout]
 trello.com##div[class*=ad-section]
 trello.com##li > div:-abp-has(div:has-text(/Upgrade this Team/i))
+trello.com##button:-abp-has(div:has-text(/try premium/i))
 ! remove the "upgrade nag" specific rule removes button from being briefly visible
 trello.com##span[name="business-class"]
 trello.com##div:-abp-has(> button > div > span[name="business-class"])
@@ -302,7 +304,11 @@ trello.com##button[data-test-id=atlassian-app-switcher]
 api-gateway.trello.com/gateway/api/gasv*/api/*/batch
 ! annoucement and nags
 trello.com/announcements
-trello.com/1/member/me
+@@trello.com/1/member/me
+trello.com/1/members/me/notifications*
+! snowplow analytics
+trellocdn.com/prgb/dist/*snowplow*.js
+
 !
 !! Meetup
 !
@@ -436,13 +442,6 @@ quora.com##div[id*=_survey]
 quora.com##div[id*=question_prompt]
 quora.com##a[class*=AskQuestionButton]
 !
-!! Hacker News
-!
-! match "posts" you cannot vote on
-news.ycombinator.com##tr.athing:if-not(td.votelinks)
-! match table row subtext without points
-news.ycombinator.com##table.itemlist tr:has(td.subtext):if-not(td:has-text(/ points /))
-!
 !! duckduckgo
 !
 duckduckgo.com##div[class*=feedback]
@@ -454,6 +453,15 @@ duckduckgo.com##div.footer
 !
 etsy.com/api/v3/ajax/bespoke/member/neu/specs/*_async_recs*
 etsy.com/api/v3/ajax/public/shop-analytics/*
+! remove engagement nag to favorite things
+etsy.com##span[id*="nudge"]
+etsy.com##button:-abp-has(> div.favorite-listing-button-icon-container)
+! false urgency
+etsy.com##div[data-appears-component-name*="nudge"]
+! false climate claims
+etsy.com##div[data-appears-component-name*="impact"]
+! junk promotions in the top nav bar
+etsy.com##li[data-ui*="promo"]
 !
 !! Ebay
 !
@@ -530,6 +538,7 @@ glassdoor.com/graph*
 glassdoor.com/getSiteNotificationsAjax*
 glassdoor.com/*/gd-job-alert*
 glassdoor.com/*/getSavedJobsCount*
+glassdoor.com##div[class*=AdModule]
 !
 !! Yelp
 !
@@ -610,3 +619,14 @@ scribd.com##div.share_document_wrapper
 camelcamelcamel.com/product/.*/go
 camelcamelcamel.com##a.button.buy
 camelcamelcamel.com##a.offers
+!
+!! eventbrite
+!
+eventbrite.com##div.js-expired-related-events > div.g-grid
+!
+!! logrocket
+!
+logrocket.com##div.code-block:-abp-has(> div.news-pop-outer-wrap)
+logrocket.com##div.code-block:-abp-has(> a div.metrics-banner)
+logrocket.com##div[class*="-plug"]
+logrocket.com##div[class*="-cta"]
