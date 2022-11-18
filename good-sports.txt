@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 202112081539
-! Checksum: +IDhBR8rN4vqXRoXNRtdAA
+! Version: 202211182020
+! Checksum: 5xRB9Nz3sCJKKp4G9ZXSxA
 ! Title: Good Sports Annoyance Rules (uBlock Origin)
-! Last modified: 08 December 2021 15:39 UTC
+! Last modified: 18 November 2022 20:20 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/good-sports.txt
 ! Licence: MIT License
@@ -114,6 +114,9 @@ fantasysports.yahoo.com##section#home-fantasy-experts
 !! recap junk
 fantasysports.yahoo.com##section#biggest-blowout-mini a[href*="recap"]
 fantasysports.yahoo.com##section#biggest-blowout-mini a[href*="biggest_blowout"]
+!! tracking
+fantasysports.yahoo.com##div#monalixa-eyebrow
+fantasysports.yahoo.com##a[href*="/track/tgt/clk"]
 !
 !! cbssports
 !
@@ -176,3 +179,7 @@ numberfire.com##div.signup-interstitial
 numberfire.com##li.premium
 ! numberfire.com##div.draftkit-myteam-modal--icon
 numberfire.com/socket.io
+!
+!! fbschedules
+!
+fbschedules.com##a[href*="prf.hn"]
