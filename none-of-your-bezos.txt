@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 202112081539
-! Checksum: pCGtOTuP2sOSFZmOB9vMOA
+! Version: 202211182020
+! Checksum: t6kBeT+0qxghjLH6CqAXzA
 ! Title: None of Your Bezos Annoyance Rules (uBlock Origin)
-! Last modified: 08 December 2021 15:39 UTC
+! Last modified: 18 November 2022 20:20 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/none-of-your-bezos.txt
 ! Licence: MIT License
@@ -69,6 +69,7 @@ amazon.com##ul[id*=recs-ysh]
 amazon.com##div[class*=ysh-]
 amazon.com##div.hud-dashboard-card-v2:has-text(/recommended for/i)
 amazon.com##div.deal-of-the-day
+amazon.*##div[cel_widget_id*=p13n-desktop-ysh_YourStoreHome]
 ! search clutter
 amazon.com##div#centerBelowExtraHowsMySearch
 amazon.com##div#hows-my-search
@@ -209,5 +210,24 @@ amazon.*##div[cel_widget_id*="buy-again-carousel"]
 !! click tracking redirect
 amazon.com/gp/r.html
 amazon.*/gp/r.html
-!! recommendations / ads
-amazon.*##div[cel_widget_id*=p13n-desktop-ysh_YourStoreHome]
+! shut up alexa
+amazon.*##div.s-widget-container:-abp-has(span:has-text(/Alexa rec/i))
+! upsells and vendor sponsored rows in amazon-local-market
+amazon.*##div[class*=alm-carousel]:-abp-has(h2:has-text(/recommended/i))
+amazon.*##div[class*=alm-carousel]:-abp-has(h2:has-text(/popular/i))
+amazon.*##div[class*=alm-carousel]:-abp-has(h2:has-text(/trending/i))
+amazon.*##div[class*=alm-carousel]:-abp-has(h2:has-text(/complete your/i))
+amazon.*##div[class*="-ad-row"]
+! stop showing "replacements" under "buy it again"
+amazon.*##li.a-carousel-card:-abp-has(span[id*=replacement-badge])
+amazon.*##div[id*=gridCell]:-abp-has(span[id*=replacement-badge])
+! "styling" upsell
+amazon.*##div#similarities_feature_div
+! recommendations
+amazon.*##div[cel_widget_id *="p13n-desktop-list"]
+! customer experience feedback engagement bait
+amazon.*##div[id*=CxFeedback]
+! ads in amazon-local-market
+amazon.*##div.acsUxWidget
+! async fetch of ads "coupons"
+amazon.*/fmc/my-ajax-endpoint
