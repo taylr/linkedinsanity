@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 202112081539
-! Checksum: FkT9CgEwwTuh0B1wnOAp0g
+! Version: 202211182020
+! Checksum: STHH/Er/Uazsk9q2zbtWfg
 ! Title: Fi-Nuance Finance Annoyance Rules (uBlock Origin)
-! Last modified: 08 December 2021 15:39 UTC
+! Last modified: 18 November 2022 20:20 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://raw.githubusercontent.com/taylr/linkedinsanity/master/fi-nuance.txt
 ! Licence: MIT License
@@ -24,6 +24,7 @@ crunchbase.com##floating-help-button
 !! crunchbase.com##div.cdk-overlay-container   !! leads to locked page
 crunchbase.com##div.cdk-live-announcer-element
 crunchbase.com##native-ad
+crunchbase.com##native-magic
 !
 !! Fidelity
 !
@@ -52,6 +53,23 @@ fidelity.com##div.card-layout--card-content:-abp-has(div.market-chart-card-conta
 !! Forbes
 !
 forbes.com##div.vestpocket
+!
+!! Houzz
+!
+! inline "related"
+houzz.com##li.comment-list__injectable
+! side bar ads and junk
+houzz.com##div.side__ad
+houzz.com##div.side__discussion
+houzz.com##img.hz-tracking-pixel
+! inline upsell
+houzz.com##div.browse-row-pro-entry
+houzz.com##div.find-local-pro-card-inline
+houzz.com##div.browse-row-pro-plus
+! log in/create account bait
+houzz.com##div.hz-photo-card__actions--visitor
+! header junk
+houzz.com##div.hz-header__pro-signup
 !
 !! bloomberg
 !
@@ -127,6 +145,11 @@ yahoo.com##.adsbygoogle
 !
 paypal.com##div[class*=promo-widget]
 paypal.com##span.vx_notificationCount
+!
+!! vrbo
+!
+vrbo.com##dl.ExpandedSearchGroups
+vrbo.com##div[data-wdio="ResultsFooter"]
 !
 !! Zillow
 !
